@@ -13,7 +13,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-family: $base-font;
+  font-family: "Open Sans";
+  @include font-size(15);
 }
 
 .content {
@@ -22,7 +23,7 @@ body {
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
 
   @include small {
     margin: 0 auto;
@@ -38,6 +39,18 @@ body {
   }
 
   @include extra {
-    width: 1140px;
+    width: 1200px;
   }
+}
+
+h2 {
+  font-family: $base-font;
+  @include font-size(47);
+  margin-top:0;
+}
+
+h3 {
+  font-family: $base-font;
+  @include font-size(18);
+  margin-top:0;
 }
