@@ -1,0 +1,50 @@
+<section class="about__section">
+    <div class="container about__container">
+        <div class="about underline">
+            <h2 class="about__title ">О нас</h2>
+         
+                    {% set descriptions = [
+                        { title: "  Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас." },
+                        { title: "Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:" }
+                        ]
+                    %}
+                    {% for description in descriptions %}
+                    <p class="about__description">
+                            {{ description.title }}
+                    </p>
+                    {% endfor %}
+            {% set items = [
+                { subtitle: "Деловые Линии" },
+                { subtitle: "Автотрейдинг" },
+                { subtitle: "ЖелДорЭкспеди" }
+                ]
+            %}
+    
+            <ul class="about__list">
+                    {% for item in items %}
+                <li class="about__item">
+                        {{ item.subtitle }}
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="btn">Подробнее о нас</div>
+        </div>
+        <div class="contacts">
+                <div class="about underline">
+                        <h2 class="about__title ">Контакти</h2>
+                     
+                                {% set descriptions = [
+                                    { title: "  Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает." }
+                                    ]
+                                %}
+                                {% for description in descriptions %}
+                                <p class="about__description">
+                                        {{ description.title }}
+                                </p>
+                                {% endfor %}
+                        <img src="img/map.jpg" alt="" class="contacts__map">
+                        <div class="btn">Подробнее о нас</div>
+
+        </div>
+    </div>
+</section>

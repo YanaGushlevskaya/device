@@ -13,34 +13,17 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-family: $base-font;
+  font-family: "Open Sans";
+  @include font-size(15);
 }
 
 .content {
   flex: 1 0;
 }
 
-.underline{
-  position: relative;
- 
-
-}
-
-.underline::before{
- 
-  content:"";
-  position: absolute;
-  top:0;
-  left:0;
-  width: 80px;
-  height: 8px;
-  background:$secondary-text;
-  transform: translateX(-50%);
-}
-
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
 
   @include small {
     margin: 0 auto;
@@ -56,6 +39,50 @@ body {
   }
 
   @include extra {
-    width: 1140px;
+    width: 1200px;
+  }
+}
+
+h2 {
+  font-family: $base-font;
+  @include font-size(47);
+  margin-top:0;
+}
+
+h3 {
+  font-family: $base-font;
+  @include font-size(18);
+  margin-top:0;
+}
+.underline{
+  position: relative;
+&:before{
+  left: 0%;
+  content:"";
+  position: absolute;
+  top:0;
+ 
+  width: 80px;
+  height: 8px;
+
+  transform: translateX(-0%);
+}}
+
+.btn{
+  @include font-size(18);
+  letter-spacing: 4px;
+  color: #000000;
+  font-family: "Gilroy";
+  font-weight: 800;
+  display: inline;
+  padding: 10px 40px;
+  text-align: center;
+  background: url(../img/btn_rest.png) center center no-repeat;
+  &:hover{
+  background: #F3C23F;
+  }
+  &:active{
+  background: #F3C23F;
+  color: $third-text;
   }
 }

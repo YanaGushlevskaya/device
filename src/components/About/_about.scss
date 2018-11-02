@@ -1,0 +1,60 @@
+.about{
+    
+   padding-top:50px;
+}
+.about:before{
+    background: #000;
+}
+
+.about__title{
+    margin:0;
+}
+
+.about__description{
+    padding-top: 30px;
+    @include font-size(15);
+    line-height: 30px;
+    color: #464646;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.about__list{
+    padding-top:80px;
+    font-family: $base-font;
+    @include font-size(18);
+    margin-top:0;
+    font-weight: 800;
+
+}
+
+.about__item{
+    list-style-type: none; 
+    padding-bottom: 20px;
+    &:before {
+    color: #B0B0B0; 
+    content: "	○ ";
+    padding-right: 20px; 
+   }
+   &:last-child{
+       margin-bottom: 55px;
+   }
+}
+
+.about__container{
+    display: flex;
+    flex-direction: row;
+}
+.contacts__map{
+    margin: 40px 0 75px 0; 
+}
+.about,.contacts{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.about{
+    margin-right: 90px;
+}
