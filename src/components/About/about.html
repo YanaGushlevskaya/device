@@ -29,10 +29,11 @@
             </ul>
             <div class="btn">Подробнее о нас</div>
         </div>
-        <div class="contacts">
-                <div class="about underline">
+        <div class="about underline">
+               
                         <h2 class="about__title ">Контакти</h2>
-                     
+                      
+                     <div class="description__map">
                                 {% set descriptions = [
                                     { title: "  Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает." }
                                     ]
@@ -42,9 +43,9 @@
                                         {{ description.title }}
                                 </p>
                                 {% endfor %}
-                        <img src="img/map.jpg" alt="" class="contacts__map">
+                        <img src="img/map.jpg" alt="" class="contacts__map"></div>
+                      
                         <div class="btn">Подробнее о нас</div>
 
-        </div>
     </div>
 </section>
