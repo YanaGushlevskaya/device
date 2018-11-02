@@ -20,6 +20,24 @@ body {
   flex: 1 0;
 }
 
+.underline{
+  position: relative;
+ 
+
+}
+
+.underline::before{
+ 
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 80px;
+  height: 8px;
+  background:$secondary-text;
+  transform: translateX(-50%);
+}
+
 .container {
   width: 100%;
   padding: 0 15px;
