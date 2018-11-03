@@ -1,10 +1,11 @@
 .about{
     
    padding-top:50px;
-}
-.about:before{
+   &:before{
     background: #000;
 }
+}
+
 
 .about__title{
     margin:0;
@@ -21,7 +22,7 @@
     @include font-size(15);
     line-height: 30px;
     color: #464646;
-    font-family: "Open Sans", sans-serif;
+    font-family: $second-font;
     font-weight: 300;
 }
 
@@ -30,14 +31,14 @@
     @include font-size(15);
     line-height: 30px;
     color: #464646;
-    font-family: "Open Sans", sans-serif;
+    font-family: $second-font;
     font-weight: 300;
 }
 
 .about__list{
     padding-top:50px;
     padding-left: 0;
-    font-family: $base-font;
+    font-family: $second-font;
     @include font-size(18);
     margin-top:0;
     font-weight: 800;
@@ -64,7 +65,7 @@
 .about__container{
     display: flex;
     flex-direction: row;
-    padding-bottom:80px;
+   
 }
 .contacts__map{
     margin-top: 20px; 
@@ -86,5 +87,10 @@
 
 
 .about__btn{
+    letter-spacing: 4px;
     margin:0;
+}
+.btn-link{
+    text-decoration: none;
+    color: $primary-text;
 }
