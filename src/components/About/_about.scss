@@ -60,6 +60,16 @@
        margin-bottom: 40px;
    }
 }
+.about__link{
+    text-decoration: none;
+    color: $primary-text;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: row;
+    padding-bottom:80px;
+}
 
 .contacts__map{
     margin-top: 20px; 

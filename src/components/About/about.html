@@ -19,6 +19,7 @@
                 %}
                 <ul class="about__list">
                     {% for item in items %}
+<<<<<<< HEAD
                     <li class="about__item">
                         {{ item.subtitle }}
                     </li>
@@ -26,6 +27,14 @@
                 </ul>
             </div>
             <div class="btn">Подробнее о нас</div>
+=======
+                <li class="about__item">
+                      <a href="#" class="about__link">  {{ item.subtitle }} </a>
+                </li>
+                {% endfor %}
+            </ul></div>
+            <div class="btn"><h3 class="about__btn">Подробнее о нас</h3></div>
+>>>>>>> efc079782fb76cadc9272ddced6f5c2b707e5011
         </div>
 
         <div class="about underline">
