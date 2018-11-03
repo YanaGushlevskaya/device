@@ -1,12 +1,12 @@
 $base-font: "Gilroy", sans-serif;
 
 $primary: #f0c52e;
-$secondary: #ffc600;
+$secondary: rgba( #f0c52e, .5);
 $third: #EEE;
 
 $primary-text: #000;
 $secondary-text: #fff;
-$third-text: rgba(0, 0, 0, 0.3);
+$third-text: rgba($primary-text, 0.3);
 
 $success: green;
 $warning: yellow;
