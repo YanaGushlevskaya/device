@@ -72,8 +72,8 @@ h3 {
 
 .btn{
   position: relative;
-  width: 300px;
   padding: 10px 0 10px 0;
+  width: 300px;
   text-align: center;
   font-family: $base-font;
   @include font-size(18);
@@ -89,7 +89,7 @@ h3 {
       background: $primary;
       color: $third-text;
     }
-    &:after{
+    &:after{  
       content: "";
       position: absolute;
       display: block;
@@ -97,6 +97,7 @@ h3 {
       height: 8px;
       background: $primary;
       top: 50%;
+      left:0;
       transform: translateY(-50%);
       z-index: -1;
   }
