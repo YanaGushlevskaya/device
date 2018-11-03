@@ -53,6 +53,7 @@ h3 {
   font-family: $base-font;
   @include font-size(18);
   margin-top:0;
+  text-transform: uppercase;
 }
 .underline{
   position: relative;
@@ -79,10 +80,10 @@ h3 {
   text-align: center;
   background: url(../img/btn_rest.png) center center no-repeat;
   &:hover{
-  background: #F3C23F;
+  background: $primary;
   }
   &:active{
-  background: #F3C23F;
+  background: $primary;
   color: $third-text;
   }
 }
