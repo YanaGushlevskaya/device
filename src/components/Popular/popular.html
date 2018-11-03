@@ -1,0 +1,34 @@
+<section class="popular">
+    <h2 hidden>popular</h2>
+
+    <div class="container">
+        <li class="popular__list reset-list">
+
+            {% set items = [
+            { img:'img/popular/item1.png', alt:'виртуальная реальность', h2:'Виртуальная реальность' },
+            { img:'img/popular/item2.png', alt:'моноподы для селфи', h2:'Моноподы для селфи' },
+            { img:'img/popular/item3.png', alt:'экшн-камеры', h2:'Экшн-камеры' },
+            { img:'img/popular/item4.png', alt:'фитнес-браслеты', h2:'Фитнес-браслеты' },
+            { img:'img/popular/item5.png', alt:'умные часы', h2:'Умные часы' },
+            { img:'img/popular/item6.png', alt:'квадрокоптеры', h2:'Квадрокоптеры' }
+            ]
+            %}
+
+            {% for item in items %}
+            <ul class="popular__item">
+                <a href="#" class="popular__link reset-link">
+                    <figure class="popular__figure">
+                        <div class="popular__img-wrapper">
+                            <img src="{{ item.img }}" alt="{{ item.alt }}" class="popular__img">
+                        </div>
+                        <figcaption>
+                            <h3 class="popular__img-title">{{ item.h2 }}</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </ul>
+            {% endfor %}
+        </li>
+    </div>
+
+</section>
