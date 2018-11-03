@@ -44,18 +44,6 @@ body {
   }
 }
 
-h2 {
-  font-family: $base-font;
-  @include font-size(47);
-  margin-top:0;
-}
-
-h3 {
-  font-family: $base-font;
-  @include font-size(18);
-  margin-top:0;
-  text-transform: uppercase;
-}
 .underline{
   position: relative;
 &:before{
@@ -71,6 +59,7 @@ h3 {
 }}
 
 .btn{
+  padding: 15px 40px;
   width: 260px;
    position: relative;
    text-align: center;
@@ -78,6 +67,7 @@ h3 {
   background: $primary;
   }
   &:active{
+   
   background: $primary;
   color: $third-text;
   }
@@ -88,8 +78,8 @@ h3 {
     width: 260px;
     height: 9px;
     background: $primary;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    left: 0%;
     z-index: -1;
   }
 }
