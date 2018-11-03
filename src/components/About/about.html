@@ -2,20 +2,22 @@
     <div class="container about__container">
         <div class="about underline">
             <h2 class="about__title ">О нас</h2>
-            <div class="description__map">
-                    <p class="about__description about__description-first">
-                        Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-                    </p>
-                    <p class="about__description about__description-second">
-                        Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
-                    </p>
-            {% set items = [
+            <div>
+                <p class="about__description">
+                    Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+                </p>
+                <p class="about__description">
+                    Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+                    транспортными компаниями:
+                </p>
+
+                {% set items = [
                 { subtitle: "Деловые Линии" },
                 { subtitle: "Автотрейдинг" },
                 { subtitle: "ЖелДорЭкспеди" }
                 ]
-            %}
-            <ul class="about__list">
+                %}
+                <ul class="about__list">
                     {% for item in items %}
                 <li class="about__item">
                       <a href="#" class="about__link">  {{ item.subtitle }} </a>
@@ -24,6 +26,7 @@
             </ul></div>
             <div class="btn"><a href="#" class="btn-link"><h3 class="about__btn"> Подробнее о нас</h3></a></div>
         </div>
+
         <div class="about underline">
                
                         <h2 class="about__title ">Контакти</h2>
@@ -35,5 +38,16 @@
                         <img src="img/map.jpg" alt="map" class="contacts__map"></div>
                         <div class="btn"><a href="#" class="btn-link"><h3 class="about__btn"> напишите нам</h3></a></div>
 
-    </div>
+            <h2 class="about__title ">Контакти</h2>
+
+            <div>
+                <p class="about__description about__description--contacts">
+                    Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
+                    покупки. Всякое бывает.
+                </p>
+                <img src="img/map.jpg" alt="map" class="contacts__map">
+            </div>
+            <div class="btn">Напишите нам</div>
+
+        </div>
 </section>

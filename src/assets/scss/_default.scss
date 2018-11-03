@@ -44,66 +44,63 @@ body {
   }
 }
 
-.underline{
-  position: relative;
-&:before{
-  left: 0%;
-  content:"";
-  position: absolute;
-  top:0;
-  width: 80px;
-  height: 8px;
-}}
-
-.btn{
-  cursor: pointer;
-  padding: 15px 10px;
-  width: 260px;
-   position: relative;
-   text-align: center;
-  &:hover{
-  background: $primary;
-  }
-  &:active{
-   
-  background: $primary;
-  color: $third-text;
-  }
-  &:after{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 260px;
-    height: 9px;
-    background: $primary;
-    top: 40%;
-    left: 0%;
-    z-index: -1;
-  }
-}
-
-h1{
-  text-transform: uppercase;
-  @include font-size(48);
-letter-spacing: 0px;
-font-family: $base-font;
-font-weight: 800;
-}
-  
-
 h2 {
   font-family: $base-font;
-  font-weight: 800;
   @include font-size(47);
+  font-weight: 800;
   margin:0;
 }
 
 h3 {
   font-family: $base-font;
-  font-weight: 800;
   @include font-size(18);
+  font-weight: 800;
   margin:0;
   text-transform: uppercase;
+}
+
+.underline{
+  position: relative;
+    &:before{
+      content:"";
+      position: absolute;
+      left: 0;
+      top:0;
+      width: 80px;
+      height: 8px;
+}}
+
+.btn{
+  position: relative;
+  padding: 10px 0 10px 0;
+  width: 300px;
+  text-align: center;
+  font-family: $base-font;
+  @include font-size(18);
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: $primary-text;
+  text-transform: uppercase;
+  &:hover{
+    background: $primary;
+    cursor:pointer;
+    }
+    &:active{
+      background: $primary;
+      color: $third-text;
+    }
+    &:after{  
+      content: "";
+      position: absolute;
+      display: block;
+      width: 300px;
+      height: 8px;
+      background: $primary;
+      top: 50%;
+      left:0;
+      transform: translateY(-50%);
+      z-index: -1;
+  }
 }
 
 .reset-list{

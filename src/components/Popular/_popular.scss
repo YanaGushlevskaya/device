@@ -47,15 +47,15 @@
 }
 
 .popular__link:hover{
-        .popular__img-wrapper{
-            background: $primary;
-        }
+    .popular__img-wrapper{
+        background: $primary;
+    }
 }
 
 .popular__link:active{
-        .popular__img{
-            opacity: .3; 
-            background: $primary;
-        }
+    .popular__img{
+        opacity: .3; 
+        background: $primary;
     }
+}
 
