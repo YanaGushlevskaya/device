@@ -1,24 +1,35 @@
 <section class="services">
     <h2 hidden>services</h2>
 
-    <div class="container">
-        <li class="services__list reset-list">
-            <ul class="services__item">
-                <h3>доставка</h3>
-            </ul>
-            <ul class="services__item">
-                <h3>гарантия</h3>
-            </ul>
-            <ul class="services__item">
-                <h3>кредит</h3>
-            </ul>
-            <ul class="services__item">
-                <h3>кредит</h3>
-            </ul>
-        </li>
+    <div class="container services__container">
+        <div class="services__wrapper">
+            <input name="tabs" type="radio" id="tab-1" checked="checked" class="sevices__input" />
+            <label for="tab-1" class="services__radio btn">Доставка</label>
+            <input name="tabs" type="radio" id="tab-2" checked="checked" class="sevices__input" />
+            <label for="tab-1" class="services__radio btn ">Гарантия</label>
+            <input name="tabs" type="radio" id="tab-3" checked="checked" class="sevices__input" />
+            <label for="tab-1" class="services__radio btn">Кредит </label>
+        </div>
 
-        <div class="services__list-description">
+        <div class="services__description">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="services__description">
+            <h2>Гарантия</h2>
+            <p>На товары в нашем магазине предоставляется гарантия, подтверждающая обязательства по отсутствию в товаре заводских дефектов. Гарантия предоставляется на срок от 2-х недель до 99 месяцев в зависимости от сервисной политики производителя. Срок гарантии указан в описании каждого товара на нашем сайте.
+                   </p>
+        </div>
+        <div class="services__description">
+            <h2>Кредит</h2>
+            <p>Покупка в кредит — это просто! Ознакомьтесь с условиями, которые предлагают наши банки-партнеры.</p>
+        </div>
 
+        <div class="services__img-wrapper">
+            <img src="img/delivery.png" alt="delivery" class="services__img">
+            <img src="img/delivery.png" alt="delivery" class="services__img">
+            <img src="img/delivery.png" alt="delivery" class="services__img">
         </div>
     </div>
 
