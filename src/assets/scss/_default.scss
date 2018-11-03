@@ -70,20 +70,25 @@ h3 {
 }}
 
 .btn{
-  @include font-size(18);
-  letter-spacing: 4px;
-  color: #000000;
-  font-family: "Gilroy";
-  font-weight: 800;
-  display: inline;
-  padding: 10px 40px;
-  text-align: center;
-  background: url(../img/btn_rest.png) center center no-repeat;
+  width: 260px;
+   position: relative;
+   text-align: center;
   &:hover{
   background: $primary;
   }
   &:active{
   background: $primary;
   color: $third-text;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 260px;
+    height: 9px;
+    background: $primary;
+    transform: translateY(-170%);
+    transform: translateX(-50%);
+    z-index: -1;
   }
 }
