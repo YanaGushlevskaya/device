@@ -87,8 +87,8 @@ h3 {
     width: 260px;
     height: 9px;
     background: $primary;
-    transform: translateY(-170%);
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
     z-index: -1;
   }
 }
