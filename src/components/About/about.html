@@ -1,7 +1,8 @@
 <section class="about__section">
     <div class="container about__container">
+
         <div class="about underline">
-            <h2 class="about__title ">О нас</h2>
+            <h2 class="about__title">О нас</h2>
             <div>
                 <p class="about__description">
                     Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -19,25 +20,24 @@
                 %}
                 <ul class="about__list">
                     {% for item in items %}
-                <li class="about__item">
-                      <a href="#" class="about__link">  {{ item.subtitle }} </a>
-                </li>
-                {% endfor %}
-            </ul></div>
-            <div class="btn"><a href="#" class="btn-link"><h3 class="about__btn"> Подробнее о нас</h3></a></div>
+                    <li class="about__item">
+                        <a href="#" class="about__link reset-link"> {{ item.subtitle }} </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="btn"><a href="#" class="btn-link reset-link">Подробнее о нас</a></div>
         </div>
 
         <div class="about underline">
-               
-                        <h2 class="about__title ">Контакти</h2>
-                      
-                     <div class="description__map">
-                                <p class="contacts__description--contacts">
-                                    Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-                                </p>
-                        <img src="img/map.jpg" alt="map" class="contacts__map"></div>
-                        <div class="btn"><a href="#" class="btn-link"><h3 class="about__btn"> напишите нам</h3></a></div>
-
-
+            <h2 class="about__title">Контакти</h2>
+            <div>
+                <p class="about__description">
+                    Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
+                    покупки. Всякое бывает.
+                </p>
+                <img src="img/map.jpg" alt="map" class="contacts__map">
+            </div>
+            <div class="btn"><a href="#" class="btn-link reset-link">напишите нам</a></div>
         </div>
 </section>

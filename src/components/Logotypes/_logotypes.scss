@@ -1,0 +1,15 @@
+.logotypes__section{
+    margin-bottom: 100px;
+}
+.logotypes__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logotypes__img{
+    filter: grayscale(100%);  
+    &:hover{
+        filter: grayscale(0%); 
+        cursor: pointer; 
+    }
+}

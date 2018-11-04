@@ -44,6 +44,15 @@ body {
   }
 }
 
+h1{
+  text-transform: uppercase;
+  @include font-size(48);
+  letter-spacing: 0px;
+  font-family: $base-font;
+  font-weight: 800;
+}
+
+
 h2 {
   font-family: $base-font;
   @include font-size(47);
@@ -81,6 +90,7 @@ h3 {
   letter-spacing: 4px;
   color: $primary-text;
   text-transform: uppercase;
+  margin:0;
   &:hover{
     background: $primary;
     cursor:pointer;
