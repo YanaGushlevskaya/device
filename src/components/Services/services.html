@@ -6,67 +6,40 @@
             <input name="tabs" type="radio" id="tab-1" class="sevices__input" />
             <label for="tab-1" class="services__radio btn">Доставка</label>
             <div class="services__description">
-                <h2>Гарантия</h2>
-                <p>На товары в нашем магазине предоставляется гарантия, подтверждающая обязательства по отсутствию в
-                    товаре
-                    заводских дефектов. Гарантия предоставляется на срок от 2-х недель до 99 месяцев в зависимости от
-                    сервисной политики производителя. Срок гарантии указан в описании каждого товара на нашем сайте.
-                </p>
-                <img src="img/logo-4 hover.png" alt="{{ item.imgalt }}" class="services__img">
+                <div class="services__slider">
+                    <h2>Доставка</h2>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                        неплохо заработаем, поднимая его на ваш этаж.
+                    </p>
+                </div>
+                <img src="img/delivery.png" alt="delivert" class="services__img">
             </div>
             <input name="tabs" type="radio" id="tab-2" class="sevices__input" />
-            <div class="services__description">
-                <h2>Гарантия</h2>
-                <p>На товары в нашем магазине предоставляется гарантия, подтверждающая обязательства по отсутствию в
-                    товаре
-                    заводских дефектов. Гарантия предоставляется на срок от 2-х недель до 99 месяцев в зависимости от
-                    сервисной политики производителя. Срок гарантии указан в описании каждого товара на нашем сайте.
-                </p>
-                <img src="img/logo-4 hover.png" alt="{{ item.imgalt }}" class="services__img">
-            </div>
             <label for="tab-2" class="services__radio btn">Гарантия</label>
+            <div class="services__description">
+                <div class="services__slider">
+                    <h2>Гарантия</h2>
+                    <p>На товары в нашем магазине предоставляется гарантия, подтверждающая обязательства по отсутствию
+                        в товаре заводских дефектов. Гарантия предоставляется на срок от 2-х недель до 99 месяцев в
+                        зависимости от сервисной политики производителя. Срок гарантии указан в описании каждого товара
+                        на нашем
+                        сайте.
+                    </p>
+                </div>
+                <img src="img/warranty.png" alt="guarantee" class="services__img">
+            </div>
             <input name="tabs" type="radio" id="tab-3" class="sevices__input" />
             <label for="tab-3" class="services__radio btn">Кредит </label>
             <div class="services__description">
-                <h2>Кредит</h2>
-                <p>Покупка в кредит — это просто! Ознакомьтесь с условиями, которые предлагают наши банки-партнеры.
-                </p>
-                <img src="img/delivery.png" alt="delivery" class="services__img">
+                <div class="services__slider">
+                    <h2>Кредит</h2>
+                    <p>Покупка в кредит — это просто! Ознакомьтесь с условиями, которые предлагают наши
+                        банки-партнеры.
+                    </p>
+                </div>
+                <img src="img/credit.png" alt="credit" class="services__img">
             </div>
         </div>
-
-        <!--         {% set items = [
-        { title:"Доставка", description:"Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-        бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.", img:"img/delivery.png", imgalt:"delivery" },
-        { title:"Гарантия", description:"На товары в нашем магазине предоставляется гарантия, подтверждающая
-        обязательства по отсутствию в товаре заводских дефектов. Гарантия предоставляется на срок от 2-х недель до 99
-        месяцев в зависимости от сервисной политики производителя. Срок гарантии указан в описании каждого товара на
-        нашем сайте.", img:"img/delivery.png", imgalt:"delivery" },
-        { title:"Кредит", description:"Покупка в кредит — это просто! Ознакомьтесь с условиями, которые предлагают наши
-        банки-партнеры.", img:"img/delivery.png", imgalt:"delivery" }
-        ]
-        %}
-
-        <div class="services__description">
-            {% for item in items %}
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.description }}</p>
-            <div class="services__img-wrapper">
-                <img src="{{ item.img }}" alt="{{ item.imgalt }}" class="services__img">
-            </div>
-            {% endfor %} -->
-        <div class="services__description">
-            <h2>Гарантия</h2>
-            <p>На товары в нашем магазине предоставляется гарантия, подтверждающая обязательства по отсутствию в товаре
-                заводских дефектов. Гарантия предоставляется на срок от 2-х недель до 99 месяцев в зависимости от
-                сервисной политики производителя. Срок гарантии указан в описании каждого товара на нашем сайте.
-            </p>
-        </div>
-        <!-- <div class="services__description">
-            <h2>Кредит</h2>
-            <p>Покупка в кредит — это просто! Ознакомьтесь с условиями, которые предлагают наши банки-партнеры.</p>
-        </div> -->
-
     </div>
 
 </section>
