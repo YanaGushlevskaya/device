@@ -69,6 +69,7 @@
 
 .btn-link{
     color: $primary-text;
+    font-weight: 800;
     &:active{
         color: rgba($primary-text,0.6);
     }

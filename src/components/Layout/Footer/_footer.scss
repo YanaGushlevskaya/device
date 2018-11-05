@@ -16,6 +16,7 @@
    
 }
 .footer-logo{
+    text-decoration: none;
     color: #ffc600;
     margin:0 0 22px 0;
     cursor: pointer;
@@ -139,7 +140,7 @@ font-weight: 300;
     margin-right: 10px;
 }
 .footer__description-right{
-    
+    text-decoration: none;
     @include font-size(15);
     color: $secondary-text;
     margin-bottom: 65px;
