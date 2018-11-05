@@ -10,6 +10,7 @@
 .topbar {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 .input {
@@ -24,7 +25,7 @@
     justify-content: space-between;
 }
 
-.fas {
+.user-menu-icon {
     padding-right: 10px;
 }
 
@@ -37,6 +38,7 @@
     color: $primary-text;
     font-family: $second-font;
     @include font-size(15);
+    margin-left: 10px;
 
     &:hover {
         color: $third-text;
