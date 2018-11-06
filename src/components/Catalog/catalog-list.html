@@ -1,9 +1,9 @@
 <section class="catalog">
-    <div class="container catalog-list__container">
-        <div class="filters">
-            
+    <div class="container catalog__container">
+        <div class="catolog__asidebar">
+
         </div>
-        <div class="catalog-list">
+        <div class="catalog__main-content">
                 {% set items = [
                     { img: "img/item-1.jpg.png", imgtitle: "Любительская селфи-палка", imgsubtitle: "500 руб." },
                     { img: "img/item-2.jpg.png", imgtitle: "Профессиональная селфи-палка ", imgsubtitle: "1 500 руб." },
@@ -11,21 +11,21 @@
                     { img: "img/item-4.jpg.png", imgtitle: "Селфи-палка «Следуй за мной»", imgsubtitle: "4 900 руб." }
                     ]
                     %}
-             <ul class="catalog-list__list">
+            <ul class="catalog__list reset-list">
                     {% for item in items %}
-                    <li class="catalog-list__item">
-                        <figure class="catalog-list__item-wrapper">
-                            <a href="#" class="catalog-list__item-link">
-                        <div class="img-block">
-                            <img src="{{ item.img }}" alt="#" class="catalog-list__img">
-                            <div class="btn catalog-btn"><a href="catalog.html" class="catalog-btn-link reset-link">В корзину</a></div>
-                            <p class="catalog-hover-text">Добавить к сравнению</p>
+                    <li class="catalog__item">
+                        <figure class="catalog__item-wrapper">
+                            <a href="#" class="catalog__link">
+                        <div class="catalog__img-wrapper">
+                            <img src="{{ item.img }}" alt="#" class="catalog__img">
+                            <div class="btn catalog__btn"><a href="catalog.html" class="catalog__btn-link reset-link">В корзину</a></div>
+                            <p class="catalog__hover-text">Добавить к сравнению</p>
                         </div>
-                            <figcaption class="catalog-list__img-description">
-                                <span class="catalog-list__img-title">
+                            <figcaption class="catalog__img-description">
+                                <span class="catalog__img-title">
                                     {{ item.imgtitle }}
                                 </span>
-                                <span class="catalog-list__img-sub-title">
+                                <span class="catalog__img-sub-title">
                                     {{ item.imgsubtitle }}
                                 </span>
                             </figcaption>
@@ -33,7 +33,7 @@
                         </figure>
                     </li>
                     {% endfor %}
-             </ul>
+            </ul>
         </div>
     </div>
 </section>
