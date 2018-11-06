@@ -38,11 +38,40 @@
                 </p>
                 <img src="img/map.jpg" alt="map" class="contacts__map">
             </div>
-            <div class="btn btn-link reset-link">напишите нам </div>
-            <div class="input">
-                <div class="btn-close"><i class="fas fa-times  btn-close__icon"></i></div>
-                <input class="input__input" type="text" placeholder="Представьтесь, пожалуйста">
-            </div>  
+            <div class="btn"><a href="#" onclick="openbox('box'); openinput('input'); return false"  class="btn-link reset-link"> напишите нам </a></div>
+                <div  id="box"  class="btn-close"  onclick="closeinput('input'); closebox('box'); return false" ><i class="fas fa-times  btn-close__icon"></i></div>
+                <input id="input"  class="input__input" type="text" placeholder="Представьтесь, пожалуйста">
         </div>
-       
+        <script type="text/javascript">
+
+       function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='block'){
+       document.getElementById(id).style.display='none';
+    }else{
+       document.getElementById(id).style.display='block';
+    }
+}
+
+function openinput(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='block'){
+       document.getElementById(id).style.display='none';
+    }else{
+       document.getElementById(id).style.display='block';
+    }
+}
+function closeinput(id){
+    display = document.getElementById(id).style.display;
+    document.getElementById(id).style.display='none';
+}
+function closebox(id){
+    display = document.getElementById(id).style.display;
+    document.getElementById(id).style.display='none';
+}
+            </script>
+            
+            
 </section>

@@ -67,19 +67,22 @@
     color: $primary-text;
     &:active{
         color: rgba($primary-text,0.6);
-        & + .input{
-            display: block ;
-        }
     }
 }
 
 .about__title{
     padding-bottom: 55px;
 }
+
+
+
+
 .input__input{
+    display: none;
     padding: 0 20px;
-    position: relative;
-    left: 300px;
+    position: absolute;
+    left: 400px;
+    bottom:0px;
     width: 360px;
     height: 50px;
     background: rgba($third,0.5);
@@ -99,8 +102,10 @@
     .input__input:focus :-moz-placeholder           {color:#000;}
     .input__input:focus:-ms-input-placeholder      {color:#000 ;}
     .btn-close{
-        position: relative;
-            left: 680px;
+        display: none;
+        position: absolute;
+        left: 800px;
+        bottom:30px;
         border-radius: 50%;
         background: #F2C33F;
         width: 60px;
@@ -112,10 +117,8 @@
         }
         &:active{
             opacity: 0.3;
-            & + .input__input{
-                display: none;
-            }
         }
+        
     }
     .btn-close__icon{
         color: $secondary-text;
