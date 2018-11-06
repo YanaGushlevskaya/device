@@ -13,7 +13,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-family: "Open Sans";
+  font-family: $second-font;
   @include font-size(15);
 }
 

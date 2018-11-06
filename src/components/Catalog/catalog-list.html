@@ -1,0 +1,39 @@
+<section class="catalog">
+    <div class="container catalog-list__container">
+        <div class="filters">
+            
+        </div>
+        <div class="catalog-list">
+                {% set items = [
+                    { img: "img/item-1.jpg.png", imgtitle: "Любительская селфи-палка", imgsubtitle: "500 руб." },
+                    { img: "img/item-2.jpg.png", imgtitle: "Профессиональная селфи-палка ", imgsubtitle: "1 500 руб." },
+                    { img: "img/item-3.jpg.png", imgtitle: "Непотопляемая селфи-палка", imgsubtitle: "2 500 руб." },
+                    { img: "img/item-4.jpg.png", imgtitle: "Селфи-палка «Следуй за мной»", imgsubtitle: "4 900 руб." }
+                    ]
+                    %}
+             <ul class="catalog-list__list">
+                    {% for item in items %}
+                    <li class="catalog-list__item">
+                        <figure class="catalog-list__item-wrapper">
+                            <a href="#" class="catalog-list__item-link">
+                        <div class="img-block">
+                            <img src="{{ item.img }}" alt="#" class="catalog-list__img">
+                            <div class="btn catalog-btn"><a href="catalog.html" class="catalog-btn-link reset-link">В корзину</a></div>
+                            <p class="catalog-hover-text">Добавить к сравнению</p>
+                        </div>
+                            <figcaption class="catalog-list__img-description">
+                                <span class="catalog-list__img-title">
+                                    {{ item.imgtitle }}
+                                </span>
+                                <span class="catalog-list__img-sub-title">
+                                    {{ item.imgsubtitle }}
+                                </span>
+                            </figcaption>
+                        </a>
+                        </figure>
+                    </li>
+                    {% endfor %}
+             </ul>
+        </div>
+    </div>
+</section>
