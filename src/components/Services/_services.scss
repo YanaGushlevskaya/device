@@ -65,6 +65,14 @@ input:checked+label, input:checked+label:hover {
 }
 .services__slider{
     margin-right: 100px;
+    p{
+        font-family: $second-font;
+        letter-spacing: 0;
+        line-height: 2;
+        font-weight: 300;
+        color: #464646;
+        @include font-size(15);
+    }
 }
 
 .services__img{
@@ -76,15 +84,6 @@ input:checked+label+.services__description{
     display:flex;
     flex-direction:row;
     align-items: center;
-}
-
-p{
-    font-family: $second-font;
-    letter-spacing: 0;
-    line-height: 2;
-    font-weight: 300;
-    color: #464646;
-    @include font-size(15);
 }
 
 h2{
