@@ -5,6 +5,16 @@
     margin-top: 40px;
     padding: 50px 60px;
     position: relative;
+
+    @include medium {
+        height: 100%;
+    }
+    @include large {
+        height: 100%;
+    }
+    @include extra {
+        height: 300px;
+    }
 }
 
 .topbar {
@@ -57,7 +67,18 @@
 }
 
 .uml1 {
-    padding-right: 200px;
+
+    @include medium {
+        font-size: 14px;
+    } 
+
+    @include large {
+        padding-right: 100px;
+    }
+
+    @include extra {
+        padding-right: 200px;
+    }
 }
 
 .logo {
@@ -126,6 +147,20 @@
     &:active{
         color: rgba($secondary-text,0.3);
         }
+
+        @include medium {
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+
+        @include large {
+            font-size: 16px;
+            letter-spacing: 0;
+        }
+        @include extra {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
 }
 
 .mnl1 {
@@ -134,4 +169,14 @@
 
 .mnl2 {
     padding-right: 110px;
+
+    @include medium {
+        padding-right: 0;
+    }
+    @include large {
+        padding-right: 0;
+    }
+    @include extra {
+        padding-right: 110px;
+    }
 }
