@@ -1,9 +1,10 @@
 {% extends 'template.html' %}
 
 {% block title %}
-  Main page
+  Каталог товаров
 {% endblock %}
 
 {% block content %}
+  {% include "components/Sidebar/sidebar.html" %}
   {% include "components/Catalog/catalog-list.html" %}
 {% endblock %}
