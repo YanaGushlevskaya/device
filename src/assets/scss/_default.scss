@@ -24,7 +24,7 @@ body {
 .container {
   width: 100%;
   padding: 0 20px;
-
+ 
   @include small {
     margin: 0 auto;
     width: 540px;
@@ -46,10 +46,13 @@ body {
 
 h1{
   text-transform: uppercase;
-  @include font-size(48);
+  @include font-size(38);
   letter-spacing: 0px;
   font-family: $base-font;
   font-weight: 800;
+  @include medium{
+    @include font-size(48);
+  } 
 }
 
 
@@ -80,6 +83,7 @@ h3 {
 }}
 
 .btn{
+
   position: relative;
   padding: 10px 0 10px 0;
   width: 300px;

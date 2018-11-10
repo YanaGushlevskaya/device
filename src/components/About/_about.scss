@@ -2,13 +2,18 @@
 .about{
     &:first-child{
     margin-right: 90px;
+    @media screen and (max-width:1199px) {
+        margin-right: 60px;
+      }
     }
+
+
     padding-top:50px;
-    flex:0 1 50%;
+    flex:0 1 50%;   
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: space-between;
     margin-bottom: 90px;
     &:before{
         background: #000;
@@ -56,11 +61,21 @@
 
 .about__container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @include medium{
+        flex-direction: row; 
+    }
 }
 
-.contacts__map{ 
-    margin-bottom: 75px;
+.contacts__map{
+    width: 100%; 
+    margin-bottom: 75px;    
+    @media screen and (max-width:1199px) {
+        margin-bottom: 130px;
+      }
+      @media screen and (max-width:991px) {
+        margin-bottom: 175px;
+      }
 }
 
 .btn-link{
@@ -78,12 +93,33 @@
 
 
 .input__input{
+  
+     @include small {
+        width: 200px;
+        left: 0px;
+    bottom:100px;
+      }
+      @include extra{
+        width: 200px;
+        left: 300px;
+    bottom:0px;
+      }
+      @include extra-large{
+        width: 240px;
+        left: 350px;
+    bottom:0px;
+      }
+      @media screen and (max-width: 576px){
+        width: 200px;
+        left: 0px;
+    bottom:100px;
+    }
     display: none;
     padding: 0 20px;
     position: absolute;
-    left: 400px;
+    left: 350px;
     bottom:0px;
-    width: 360px;
+    width: 260px;
     height: 50px;
     background: rgba($third,0.5);
     &:hover{
@@ -102,9 +138,27 @@
     .input__input:focus :-moz-placeholder           {color:#000;}
     .input__input:focus:-ms-input-placeholder      {color:#000 ;}
     .btn-close{
+       
+      
+          @include small {
+            left: 210px;
+        bottom:110px;
+          }
+          @include extra{
+            left: 510px;
+        bottom:10px;
+          }
+          @include extra-large{
+            left: 600px;
+        bottom:10px;
+          }
+          @media screen and (max-width: 576px){
+            left: 210px;
+            bottom:110px;
+        }
         display: none;
         position: absolute;
-        left: 800px;
+        left: 630px;
         bottom:30px;
         border-radius: 50%;
         background: #F2C33F;
@@ -121,6 +175,7 @@
         
     }
     .btn-close__icon{
+
         color: $secondary-text;
         position: relative;
         top: 15px;
