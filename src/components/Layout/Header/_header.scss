@@ -1,11 +1,32 @@
 .container--header {
-    height: 300px;
+    // height: 300px;
     max-width: 1160px;
     background-color: $secondary;
     margin-top: 40px;
+<<<<<<< HEAD
     margin-bottom: 80px;
     padding: 50px 60px;
+=======
+    padding: 30px 30px;
+>>>>>>> a20feb8bdf76ee9efd0b8d5feb55b3b1b19613dc
     position: relative;
+
+    @include small {
+        height: 100%;
+    }
+
+    @include medium {
+        height: 100%;
+        padding: 50px 60px;
+    }
+    @include large {
+        height: 100%;
+        padding: 50px 60px;
+    }
+    @include extra {
+        height: 300px;
+        padding: 50px 60px;
+    }
 }
 
 .topbar {
@@ -18,6 +39,7 @@
     background-color: transparent;
     border: none;
     padding-left: 5px;
+    width: 70%;
     &:hover {
         color: $third-text;
     }
@@ -28,13 +50,55 @@
 }
 
 .user-menu {
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
+
+    @include small {
+        width: 50%;
+    }
+    @include medium {
+        width: 50%;
+    }
+    @include large {
+        width: 50%;
+    }
+    @include extra {
+        width: 50%;
+    }
 }
 
 .user-menu-icon {
-    padding-right: 10px;
+    @include small {
+        padding-right: 5px;
+    }
+    @include medium {
+        padding-right: 5px;
+    }
+    @include large {
+        padding-right: 10px;
+    }
+    @include extra {
+        padding-right: 10px;
+    }
+}
+
+.umt {
+
+    display: none;
+
+    @include small {
+        display: inline;
+    }
+    @include medium {
+        display: inline;
+    }
+    @include large {
+        display: inline;
+    }
+    @include extra {
+        display: inline;
+    }
 }
 
 .fa-plus {
@@ -46,7 +110,6 @@
     color: $primary-text;
     font-family: $second-font;
     @include font-size(15);
-    margin-left: 10px;
 
     &:hover {
         color: $third-text;
@@ -55,10 +118,38 @@
     &:active{
     color: rgba($secondary-text,0.3);
     }
+
+    @include small {
+        @include font-size(14);
+    }
+    @include medium {
+        @include font-size(14);
+    }
+    @include large {
+        @include font-size(15);
+    }
+    @include extra {
+        @include font-size(15);
+    }
 }
 
 .uml1 {
-    padding-right: 200px;
+
+    @include small {
+        padding-right: 0;
+    }
+
+    @include medium {
+        padding-right: 0;
+    } 
+
+    @include large {
+        padding-right: 100px;
+    }
+
+    @include extra {
+        padding-right: 200px;
+    }
 }
 
 .logo {
@@ -78,6 +169,7 @@
 
 .navigation {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -101,21 +193,30 @@
     list-style: none;
 }
 
+<<<<<<< HEAD
 .nav-main {
     width: 50%;
+=======
+.main-nav {
+    width: 30%;
+
+    @include medium {
+        width: 50%;
+    } 
+>>>>>>> a20feb8bdf76ee9efd0b8d5feb55b3b1b19613dc
 }
 
 .main-nav__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
+    padding: 0;   
 }
 
 .main-nav__link, .nav-catalog {
     text-decoration: none;
     text-transform: uppercase;
-    @include font-size(18);
+    // @include font-size(18);
     font-family: $base-font;
     font-weight: 800;
     letter-spacing: 1px;
@@ -127,6 +228,25 @@
     &:active{
         color: rgba($secondary-text,0.3);
         }
+
+        @include small {
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+
+        @include medium {
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+
+        @include large {
+            font-size: 16px;
+            letter-spacing: 0;
+        }
+        @include extra {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
 }
 
 .mnl1 {
@@ -134,5 +254,16 @@
 }
 
 .mnl2 {
-    padding-right: 110px;
+    @include small {
+        padding-right: 0;
+    }
+    @include medium {
+        padding-right: 0;
+    }
+    @include large {
+        padding-right: 0;
+    }
+    @include extra {
+        padding-right: 110px;
+    }
 }

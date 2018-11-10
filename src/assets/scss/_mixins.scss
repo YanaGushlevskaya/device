@@ -3,6 +3,10 @@ $breakpoint-medium: 768px;
 $breakpoint-large: 992px;
 $breakpoint-extra: 1200px;
 $breakpoint-extra-large: 1440px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a20feb8bdf76ee9efd0b8d5feb55b3b1b19613dc
 
 @mixin small {
   @media screen and (min-width: $breakpoint-small) {
@@ -33,6 +37,10 @@ $breakpoint-extra-large: 1440px;
     @content;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> a20feb8bdf76ee9efd0b8d5feb55b3b1b19613dc
 
 @mixin placeholder {
   ::-webkit-input-placeholder {
