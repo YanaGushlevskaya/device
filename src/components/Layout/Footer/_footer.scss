@@ -150,6 +150,7 @@ text-transform: uppercase;
 }
 .footer__right-item{
     margin-left:10px;
+    margin-bottom: 5px;
     @include extra{
         margin-left:30px;
       }  
@@ -194,6 +195,7 @@ font-weight: 300;
     margin-top:0;
 }
 .footer__logo-html{
+    margin-top:5px;
     text-decoration: none;
     cursor: pointer;
     &:hover{

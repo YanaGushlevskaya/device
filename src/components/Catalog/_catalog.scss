@@ -3,28 +3,49 @@
     flex-direction: row;
  }
  .catalog__main-content{
-    width: 835px;
+    width:72%;
     padding: 70px 0 70px 30px;
     display: flex;
     flex-direction: column;
+ 
  }
  .catalog__list{
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @media screen and (max-width:991px) {
+        justify-content: center;
+        align-items: center;
+      
+    }
+   
  }
  .catalog__item{
+    @include extra {
+        max-width: 360px;  
+        margin: 0 0 50px 40px; 
+    }
+    @include large {
+        max-width: 43%;  
+        margin: 0 0 50px 40px; 
+    }
     padding-left: 0;
-    max-width: 360px;
-    margin: 0 0 50px 40px;
+    max-width: 100%;
+    margin: 0 0 30px 20px;
     cursor: pointer;
  }
  .catalog__item-wrapper{
     margin: 0;
     padding-left: 0;
     max-width: 100%;
+ }
+
+ .catalog__img{
+     width: 100%;
+     overflow: hidden;
  }
  .catalog__img-description{
      margin-top: 35px;
@@ -37,26 +58,47 @@
         text-decoration: none;
     }
     .catalog__img-title{
-        @include font-size(18);
+        @include font-size(10);
+        padding: 0 5px 0 0;
         letter-spacing: 0px;
         color:$primary-text;
         font-family: $base-font;
         font-weight: 800;
         text-align: left;
+        @include small{
+            @include font-size(14);
+        }
+        @include large{
+            @include font-size(18);
+        }
     }
     .catalog__img-sub-title{
-        @include font-size(16);
+        @include font-size(8);
         letter-spacing: 0px;
         color: #464646;
         font-family: $base-font;
         font-weight: 300;
         text-align: right;
+        @include small{
+            @include font-size(12);
+        }
+        @include medium{
+            @include font-size(16);
+        }
     }
     .catalog__btn{
         display: none;
-        max-width: 204px;
-        &:after{
+        max-width: 90%;
+        margin: 0 10%;
+        @include small{
             max-width: 204px;
+        }
+        &:after{
+            max-width: 90%;
+            @include small{
+                max-width: 204px;
+            }
+  
         }
         
     }
@@ -67,9 +109,35 @@
             color: rgba($primary-text,0.6);
         }
     }
+    .catalog-hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       flex-direction: column;
+
+    }
     .catalog__img-wrapper{
+      
         overflow: hidden;
-        max-height: 382px;
+        max-width: 220px;
+        max-height:220px;
+      
+        @include small{
+            max-width: 300px;
+            max-height:300px;
+        }
+        @include medium{
+            max-height:240px;
+            max-width: 240px;
+        }
+        @include large{
+            max-height: 300px;
+            max-width: 300px;
+        }
+        @include extra{
+            max-height: 360px;
+            max-width: 360px;
+            }
     }
     .catalog__img-wrapper:hover .catalog__img{
         opacity: 0.7;
@@ -77,17 +145,20 @@
     .catalog__img-wrapper:hover .catalog__btn{
         display: block;
         position: relative;
-        left:22%;
+        left:0%;
         transform: translateY(-500%);
+       
     }
     .catalog__img-wrapper:hover .catalog__hover-text{
         display: block;
         position: relative;
         left:0%;
-        transform: translateY(-560%);
+        transform: translateY(-550%);
+
     }
     
     .catalog__hover-text{
+        display: none;
         @include font-size(13);
         line-height: 36px;
  color: $primary-text;
@@ -104,9 +175,14 @@
 }
 .catalog__navigation{
     background: $third;
-    width: 760px;
-    
-    margin-left: 40px;
+    width: 100%;
+    @include small{
+        width: 95%;
+    }
+    @include extra{
+        margin-left: 40px;
+    }
+    margin-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,12 +197,15 @@
 }
 .catalog__navigation-description{
     margin: 0;
-    @include font-size(16);
+    @include font-size(8);
     letter-spacing: 3px;
     color: $primary-text;
     font-family: $base-font;
     font-weight: 800;
     text-transform: uppercase;
+    @include medium{
+        @include font-size(16);
+    }
 }
 .catalog__navigation-item{
     text-align: center;
@@ -140,7 +219,10 @@
     }
 }
 .next-last{
-    padding: 30px;
+    padding: 10px;
+    @include small{
+        padding: 30px;   
+    }
     &:hover{
         background: #D8D8D8;
     }
