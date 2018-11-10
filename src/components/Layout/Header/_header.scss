@@ -189,14 +189,18 @@
 }
 
 .main-nav {
-    width: 50%;
+    width: 30%;
+
+    @include medium {
+        width: 50%;
+    } 
 }
 
 .main-nav__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
+    padding: 0;   
 }
 
 .main-nav__link, .nav-catalog {
