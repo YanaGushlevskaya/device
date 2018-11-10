@@ -3,9 +3,12 @@
 }
 .logotypes__container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+
     @include small{
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }

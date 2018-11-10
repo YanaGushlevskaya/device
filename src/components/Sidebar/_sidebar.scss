@@ -33,6 +33,10 @@
 }
 
 .filter {
+    display: none;
+    @include medium{
+        display: block;
+    }
     width: 28%;
     height: 65px;
     background-color: #DBDBDB;
@@ -90,7 +94,7 @@
     &:after {
         content: "";
         position: absolute;
-        width: 1000%;
+        width: 144.5%;
         height: 65px;
         left: 0;
         top: 0;

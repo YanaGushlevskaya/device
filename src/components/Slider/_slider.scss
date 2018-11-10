@@ -4,19 +4,28 @@
     align-items: center;
     position: relative;
     left: 0;
-    top: -110px;
-}
-
-.slider-title {
+ 
+    @include extra {
+        top: -110px;
+    }
+ }
+ 
+ .slider-title {
     font-family: 'Gilroy-ExtraBold', sans-serif;
     text-transform: none;
     max-width: 500px;
     text-align: left;
     letter-spacing: 0px;
-    padding-top: 60px;
     position: relative;
+    font-size: 25px;
     z-index: 999;
-
+ 
+    @include extra {
+        font-size: 47px;
+        padding-top: 60px;
+ 
+    }
+ 
     &:before {
             content: '';
             position: absolute;
@@ -25,8 +34,13 @@
             width: 100px;
             height: 7px;
             background: #fff;
+            display: none;
+ 
+            @include extra {
+                display: inline;
+            }
     }
-
+ 
     &:after {
         content: '01';
         @include font-size(179);
@@ -36,77 +50,99 @@
         top: -55px;
         color: #fff;
         z-index: -1;
+        display: none;
+ 
+        @include extra {
+            display: inline;
+        }
+ 
     }
-}
-
-.btn-radio-wrap {
+ }
+ 
+ .btn-radio-wrap {
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 500px;
-}
-
-.radio-btn {
+    flex-wrap: wrap;
+ 
+ 
+ }
+ 
+ .radio-btn {
     list-style: none;
     display: flex;
     margin: 0;
-}
-
-.radio-btn__img {
+ }
+ 
+ .radio-btn__img {
     &:not(last-child) {
         padding-right: 20px;
     }
-}
-
-.img-container {
-    width: 50%;
+ }
+ 
+ .img-container {
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.slider-img {
-    max-width: 500px;
-    min-height: 400px;
-}
-
-.slider-description {
+ 
+    @include extra {
+        width: 50%;
+    }
+ }
+ 
+ .slider-img {
+    width: 70%;
+ 
+    @include extra {
+        width: 384px;
+    }
+ 
+ }
+ 
+ .slider-description {
     width: 50%;
-}
-
-.slider-text {
+ }
+ 
+ .slider-text {
     line-height: 30px;
     max-width: 500px;
     font-family: $second-font;
     @include font-size(15);
     color: rgba(0, 0, 0, 0.8);
-}
-
-.sp-title {
+ }
+ 
+ .sp-title {
     @include font-size(36);
     font-weight: 400;
     margin: 0;
     font-family: 'Gilroy-Light', sans-serif;
     line-height: 20px;
     padding-bottom: 20px;
-}
-
-.sp-text {
+ }
+ 
+ .sp-text {
     @include font-size(13);
     color: rgba(0, 0, 0, 0.8);
     margin: 0;
-}
-
-.specification-wrap {
+ }
+ 
+ .specification-wrap {
     display: flex;
     justify-content: flex-start;
-}
-
-.specification {
+    display: none;
+ 
+    @include extra {
+        display: flex;
+    }
+ }
+ 
+ .specification {
     margin-top: 50px;
-
+ 
     &:not(:last-child) {
         margin-right: 70px;
     }
-}
+ }

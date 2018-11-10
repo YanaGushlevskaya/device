@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    
+  Каталог товаров
+
+  </title>
+
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+  <header class="header">
+  <div class="container container--header">
+    <div class="logo">
+      <a href="index.html" class="logo__link">
+        Device
+      </a>
+    </div>
+    <div class="topbar">
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input class="input-header" type="text" placeholder="Поиск по сайту">
+      </div>
+      <div class="user-menu">
+        <a class="user-menu-link uml1" href="#"><i class="fas fa-user user-menu-icon"></i>
+          <span class="umt">Войти</span>
+        </a>
+        <a class="user-menu-link uml2" href="#"><i class="fas fa-signal user-menu-icon"></i>
+          <span class="umt">Сравнить</span>
+        </a>
+        <a class="user-menu-link uml3" href="#"><i class="fas fa-shopping-bag user-menu-icon"></i>
+          <span class="umt">Корзина</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="navigation">
+
+      <nav class="nav-catalog">
+        <li class="nav-catalog__list">
+          <a href="catalog.html" class="nav-catalog__title">Каталог товаров</a>
+          <i class="fas fa-plus"></i>
+        </li>
+      </nav>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link mnl1">
+              Доставка
+            </a></li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link mnl2">
+              Гарантия
+            </a></li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Контакты
+            </a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+  <div class="content">
+    
+  <div class="container container--sidebar">
+    <h1 class="sidebar-title">
+        Каталог товаров
+    </h1>
+    <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог товаров</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Моноподы для селфи</a></li>
+        </ul>
+    </div>
+
+    <div class="panel">
+        <div class="filter">
+            <p class="filter__title">Фильтр:</p>
+        </div>
+        <div class="sortpanel">
+            <p class="sortpanel__title">Сортировка:</p>
+            <ul class="sortpanel__list">
+                <li class="sortpanel__item"><a href="#" class="sortpanel__link active-link">По цене</a></li>
+                <li class="sortpanel__item"><a href="#" class="sortpanel__link">По типу</a></li>
+                <li class="sortpanel__item"><a href="#" class="sortpanel__link">По популярности</a></li>
+            </ul>
+
+            <div class="sortpanel__btns">
+                    <a href="#" class="sortpanel__btn-up">
+                        <img src="img/icon-up-dir.png" alt="По возрастанию">
+                    </a>
+                    <a href="#" class="sortpanel__btn-down">
+                            <img src="img/icon-down-dir.png" alt="По убыванию">
+                        </a>
+                </div>
+
+        </div>
+        
+    </div>
+
+</div>
+  <section class="catalog">
+    <div class="container catalog__container">
+        <div class="catolog__asidebar">
+    <li class="asidebar__list reset-list">
+        <ul class="asidebar__item">
+            <h3>Стоимость</h3>
+            <!-- <div id="slider"></div> -->
+            <img src="img/range.PNG" alt="range" class="asidebar__img">
+        </ul>
+        <ul class="asidebar__item">
+            <h3>Цвет</h3>
+            <li class="asidebar__checkbox reset-list">
+                
+                
+                <ul class="asidebar__checkbox-item">
+                    <input type="checkbox" class="checkbox" checked id="Черный">
+                    <label for="Черный" class="checkbox-description">
+                        <span class="checkmark"></span>Черный</label>
+                </ul>
+                
+                <ul class="asidebar__checkbox-item">
+                    <input type="checkbox" class="checkbox"  id="Белый">
+                    <label for="Белый" class="checkbox-description">
+                        <span class="checkmark"></span>Белый</label>
+                </ul>
+                
+                <ul class="asidebar__checkbox-item">
+                    <input type="checkbox" class="checkbox" checked id="Синий">
+                    <label for="Синий" class="checkbox-description">
+                        <span class="checkmark"></span>Синий</label>
+                </ul>
+                
+                <ul class="asidebar__checkbox-item">
+                    <input type="checkbox" class="checkbox" checked id="Красный">
+                    <label for="Красный" class="checkbox-description">
+                        <span class="checkmark"></span>Красный</label>
+                </ul>
+                
+                <ul class="asidebar__checkbox-item">
+                    <input type="checkbox" class="checkbox"  id="Розовый">
+                    <label for="Розовый" class="checkbox-description">
+                        <span class="checkmark"></span>Розовый</label>
+                </ul>
+                
+            </li>
+        </ul>
+        <ul class="asidebar__item">
+            <h3>Bluetooth</h3>
+            <li class="asidebar__checkbox reset-list">
+                <ul class="asidebar__checkbox-item">
+                    <input type="checkbox" class="checkbox" id="1">
+                    <label for="1" class="checkbox-description">
+                        <span class="checkmark radio"></span>Есть</label>
+                </ul>
+                <ul class="asidebar__checkbox-item">
+                    <input type="checkbox" class="checkbox" id="2">
+                    <label for="2" class="checkbox-description">
+                        <span class="checkmark radio"></span>Нет</label>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script>
+        function collision($div1, $div2) {
+            var x1 = $div1.offset().left;
+            var w1 = 40;
+            var r1 = x1 + w1;
+            var x2 = $div2.offset().left;
+            var w2 = 40;
+            var r2 = x2 + w2;
+
+            if (r1 < x2 || x1 > r2) return false;
+            return true;
+
+        }
+
+        // // slider call
+
+        $('#slider').slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [75, 300],
+            slide: function (event, ui) {
+
+                $('.ui-slider-handle:eq(0) .price-range-min').html('$' + ui.values[0]);
+                $('.ui-slider-handle:eq(1) .price-range-max').html('$' + ui.values[1]);
+                $('.price-range-both').html('<i>$' + ui.values[0] + ' - </i>$' + ui.values[1]);
+
+                //
+
+                if (ui.values[0] == ui.values[1]) {
+                    $('.price-range-both i').css('display', 'none');
+                } else {
+                    $('.price-range-both i').css('display', 'inline');
+                }
+
+                //
+
+                if (collision($('.price-range-min'), $('.price-range-max')) == true) {
+                    $('.price-range-min, .price-range-max').css('opacity', '0');
+                    $('.price-range-both').css('display', 'block');
+                } else {
+                    $('.price-range-min, .price-range-max').css('opacity', '1');
+                    $('.price-range-both').css('display', 'none');
+                }
+
+            }
+        });
+
+        $('.ui-slider-range').append('<span class="price-range-both value"><i>$' + $('#slider').slider('values', 0) + ' - </i>' + $('#slider').slider('values', 1) + '</span>');
+
+        $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">$' + $('#slider').slider('values', 0) + '</span>');
+
+        $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">$' + $('#slider').slider('values', 1) + '</span>');
+    </script> -->
+</div>
+        <div class="catalog__main-content">
+            
+            <ul class="catalog__list reset-list">
+                
+                <li class="catalog__item">
+                    <figure class="catalog__item-wrapper">
+                        <a href="#" class="catalog__link">
+                            <div class="catalog__img-wrapper">
+                                <img src="img/item-1.jpg.png" alt="#" class="catalog__img">
+                                <div class="catalog-hover">
+                                <div class="btn catalog__btn"><a href="catalog.html" class="catalog__btn-link reset-link">В
+                                        корзину</a></div>
+                                <p class="catalog__hover-text">Добавить к сравнению</p></div>
+                            </div>
+                            <figcaption class="catalog__img-description">
+                                <span class="catalog__img-title">
+                                    Любительская селфи-палка
+                                </span>
+                                <span class="catalog__img-sub-title">
+                                    500 руб.
+                                </span>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </li>
+                
+                <li class="catalog__item">
+                    <figure class="catalog__item-wrapper">
+                        <a href="#" class="catalog__link">
+                            <div class="catalog__img-wrapper">
+                                <img src="img/item-2.jpg.png" alt="#" class="catalog__img">
+                                <div class="catalog-hover">
+                                <div class="btn catalog__btn"><a href="catalog.html" class="catalog__btn-link reset-link">В
+                                        корзину</a></div>
+                                <p class="catalog__hover-text">Добавить к сравнению</p></div>
+                            </div>
+                            <figcaption class="catalog__img-description">
+                                <span class="catalog__img-title">
+                                    Профессиональная селфи-палка 
+                                </span>
+                                <span class="catalog__img-sub-title">
+                                    1 500 руб.
+                                </span>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </li>
+                
+                <li class="catalog__item">
+                    <figure class="catalog__item-wrapper">
+                        <a href="#" class="catalog__link">
+                            <div class="catalog__img-wrapper">
+                                <img src="img/item-3.jpg.png" alt="#" class="catalog__img">
+                                <div class="catalog-hover">
+                                <div class="btn catalog__btn"><a href="catalog.html" class="catalog__btn-link reset-link">В
+                                        корзину</a></div>
+                                <p class="catalog__hover-text">Добавить к сравнению</p></div>
+                            </div>
+                            <figcaption class="catalog__img-description">
+                                <span class="catalog__img-title">
+                                    Непотопляемая селфи-палка
+                                </span>
+                                <span class="catalog__img-sub-title">
+                                    2 500 руб.
+                                </span>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </li>
+                
+                <li class="catalog__item">
+                    <figure class="catalog__item-wrapper">
+                        <a href="#" class="catalog__link">
+                            <div class="catalog__img-wrapper">
+                                <img src="img/item-4.jpg.png" alt="#" class="catalog__img">
+                                <div class="catalog-hover">
+                                <div class="btn catalog__btn"><a href="catalog.html" class="catalog__btn-link reset-link">В
+                                        корзину</a></div>
+                                <p class="catalog__hover-text">Добавить к сравнению</p></div>
+                            </div>
+                            <figcaption class="catalog__img-description">
+                                <span class="catalog__img-title">
+                                    Селфи-палка «Следуй за мной»
+                                </span>
+                                <span class="catalog__img-sub-title">
+                                    4 900 руб.
+                                </span>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </li>
+                
+            </ul>
+            <div class="catalog__navigation">
+                <a href="#" class="catalog__navigation-description next-last reset-link">Назад</a>
+                <ul class="catalog__navigation-list reset-list">
+                    <li class="catalog__navigation-item"><a href="#" class="reset-link catalog__navigation-description">1</a></li>
+                    <li class="catalog__navigation-item"><a href="#" class="reset-link catalog__navigation-description">2</a></li>
+                    <li class="catalog__navigation-item"><a href="#" class="reset-link catalog__navigation-description">3</a></li>
+                </ul>
+                <a href="#" class="catalog__navigation-description next-last reset-link">Вперед</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  </div>
+  
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer__block footer__left">
+               
+                    <a href="index.html" class="footer-logo">
+                            <h1 class="footer-logo">
+                    Device
+                </h1>
+                </a>
+               
+                <p class="footer__description">г. Москва, ул. Строителей, 15</p>
+                <div class="footer__left-line underline"></div>
+            </div>
+            <div class="footer__block footer__center">
+                
+                <ul class="footer__center-list">
+                    
+                    <li class="footer__center-item"> <a href="#" class="footer__center-item-link"> Доставка
+                        </a></li>
+                    
+                    <li class="footer__center-item"> <a href="#" class="footer__center-item-link"> Гарантии
+                        </a></li>
+                    
+                    <li class="footer__center-item"> <a href="#" class="footer__center-item-link"> Контакты
+                        </a></li>
+                    
+                </ul>
+                
+                <ul class="footer__center-icon-list">
+                    
+                    <li class="footer__center-icon-item"><a href="#" class="footer__center-icon-link"> <i class="fab fa-twitter-square"></i></a></li>
+                    
+                    <li class="footer__center-icon-item"><a href="#" class="footer__center-icon-link"> <i class="fab fa-facebook-square"></i></a></li>
+                    
+                    <li class="footer__center-icon-item"><a href="#" class="footer__center-icon-link"> <i class="fab fa-instagram"></i></a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer__block footer__right">
+                
+
+                <ul class="footer__right-list">
+                    
+                    <li class="footer__right-item">
+                        <a href="" class="footer__right-link">
+
+                            <p class="footer__right-nav"><i class="fas fa-user footer__right-icon"></i>Войти</p>
+                        </a></li>
+                    
+                    <li class="footer__right-item">
+                        <a href="" class="footer__right-link">
+
+                            <p class="footer__right-nav"><i class="fas fa-signal footer__right-icon"></i>Сравнить</p>
+                        </a></li>
+                    
+                    <li class="footer__right-item">
+                        <a href="" class="footer__right-link">
+
+                            <p class="footer__right-nav"><i class="fas fa-shopping-bag footer__right-icon"></i>Корзина</p>
+                        </a></li>
+                    
+                </ul>
+                <p class="footer__description-right"><a class="footer__description-right" href="tel:+74954959595"> Тел.: +7 (495) 495-95-95</a></p>
+                <a href="#" class="footer__logo-html">
+                    <img src="img/logo-html.png" alt="logo-html" class="footer__logo-html"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
