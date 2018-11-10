@@ -1,0 +1,136 @@
+.catolog__asidebar{
+    width: 325px;
+    background: $third;
+    padding: 70px 0 0 60px;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        display:block;
+        width: 100%;
+        height:100%;
+        top:0;
+        right:100%;
+        background: $third;
+    }
+}
+
+.asidebar__list{
+    width:74%;  
+}
+
+.asidebar__item{
+    padding: 10px 0 40px 0;
+    margin: 0;
+    border-top: 2px solid #000;
+    h3{
+        text-transform: none;
+        padding-bottom: 25px;
+    }
+}
+
+.asidebar__checkbox-item{
+    padding: 0 0 6px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:hover{
+        .checkmark, .checkbox-description{
+        cursor: pointer;
+        }
+        .checkmark{
+            border: 2px solid rgba($color: #000, $alpha: 0.6);
+        }
+        .radio:before{
+            color: rgba($color: #000, $alpha: 0.6);
+        }
+        }
+    &:active{
+        .checkmark{
+            border: 2px solid rgba($color: #000, $alpha: 1);
+        }
+        .radio:before{
+            color: #000;
+        }
+    }
+}
+
+.checkbox{
+    position:absolute;
+    opacity:0;
+}
+
+.checkbox-description{
+    width: 100%;
+    @include font-size(14);
+    font-family: $second-font;
+    line-height: 2.8;
+    color:#000;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.checkmark{
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background: transparent;
+    margin-right: 20px;
+    &:before{
+        content: '\f00c';
+        color:#000;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-style: normal;
+        @include font-size(23);
+        display: none;
+        margin:-120% 0 0 15%;
+    }
+}
+
+.checkbox:checked+.checkbox-description .checkmark:before{
+    display:block;
+}
+
+.radio{
+    border-radius: 50%;
+}
+
+.radio:before{
+    content: "\f111";
+    margin: -31% 0 0 23%;
+    @include font-size (12);
+}
+
+.value{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    width: 40px;
+    text-align: center;
+    display: block;
+    
+    /* optional */
+    
+    font-weight: normal;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 14px;
+    color:rgba($color: #000, $alpha: .2)
+  }
+  
+  .price-range-both.value {
+    width: 100px;
+    margin: 0 0 0 -50px;
+    top: 26px;
+  }
+  
+  .price-range-both {
+    display: none; 
+  }
+  
+  .value i {
+    font-style: normal;
+  }
