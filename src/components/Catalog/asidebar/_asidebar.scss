@@ -1,5 +1,5 @@
 .catolog__asidebar{
-    width: 325px;
+    width: 28%;
     background: $third;
     padding: 70px 0 0 60px;
     position: relative;
@@ -54,7 +54,9 @@
         }
     }
 }
-
+.asidebar__img{
+    width:100%;
+}
 .checkbox{
     position:absolute;
     opacity:0;
@@ -104,7 +106,7 @@
     @include font-size (12);
 }
 
-.value{
+/* .value{
     position: absolute;
     top: 30px;
     left: 50%;
@@ -113,9 +115,8 @@
     text-align: center;
     display: block;
     
-    /* optional */
-    
-    font-weight: normal;
+    optional
+
     font-family: Verdana,Arial,sans-serif;
     font-size: 14px;
     color:rgba($color: #000, $alpha: .2)
@@ -133,4 +134,4 @@
   
   .value i {
     font-style: normal;
-  }
+  } */

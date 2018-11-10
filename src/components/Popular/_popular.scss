@@ -7,25 +7,40 @@
     flex-direction: row;
     align-items: flex-start; 
     flex-wrap: wrap;
+    @include small {
+        justify-content: center;
+    }
+    @include medium {
+        justify-content: center;
+    }
+    @include large {
+        justify-content: center;
+    }
+    @include extra {
+        justify-content: center;
+    }
 }
 
 .popular__item{
-   flex: 0 1 200px;
-   padding: 0 40px 0 0;
-   margin: 0;
+    flex: 0 1 200px;
+    padding: 0 40px 0 0;
+    margin: 0;
 
-   &:nth-child(6n){
-       padding: 0;
-       flex: 0 1 160px; 
-   }
-
-   h3{
-       color:$primary-text;
+    @include extra-large {
+        &:nth-child(6n){
+            padding: 0;
+            flex: 0 1 160px; 
+        }
+    }
+    
+    
+h3 {
+    color:$primary-text;
        letter-spacing: 0;
        text-transform: none;
        line-height: 1.2;
        padding-bottom: 30px;
-   }
+}
 }
 
 .popular__figure{
@@ -62,4 +77,3 @@
         opacity:.3;
     }
 }
-
