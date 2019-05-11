@@ -1,221 +1,161 @@
-.container--header {
-    // height: 300px;
-    max-width: 1160px;
-    background-color: $secondary;
-    margin-top: 40px;
-    padding: 30px 30px;
-    position: relative;
-    @include small {
-        height: 100%;
-    }
-    @include medium {
-        height: 100%;
-        padding: 50px 60px;
-    }
-    @include large {
-        height: 100%;
-        padding: 50px 60px;
-    }
-    @include extra {
-        height: 300px;
-        padding: 50px 60px;
-    }
-}
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-}
-.input-header {
-    background-color: transparent;
-    border: none;
-    padding-left: 5px;
-    width: 70%;
-    &:hover {
-        color: $third-text;
-    }
-    &:active{
-    color: rgba($secondary-text,0.3);
-    }
-}
-.user-menu {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    @include small {
-        width: 50%;
-    }
-    @include medium {
-        width: 50%;
-    }
-    @include large {
-        width: 50%;
-    }
-    @include extra {
-        width: 50%;
-    }
-}
-.user-menu-icon {
-    @include small {
-        padding-right: 5px;
-    }
-    @include medium {
-        padding-right: 5px;
-    }
-    @include large {
-        padding-right: 10px;
-    }
-    @include extra {
-        padding-right: 10px;
-    }
-}
-.umt {
-    display: none;
-    @include small {
-        display: inline;
-    }
-    @include medium {
-        display: inline;
-    }
-    @include large {
-        display: inline;
-    }
-    @include extra {
-        display: inline;
-    }
-}
-.fa-plus {
+%hover-active-state {
+  color: $primary-text;
+  &:hover {
+    color: $fourth-text;
+  }
+  &:active {
     color: $third-text;
+  }
 }
-.user-menu-link {
-    text-decoration: none;
-    color: $primary-text;
-    font-family: $second-font;
-    @include font-size(15);
-    &:hover {
-        color: $third-text;
-    }
-    &:active{
-    color: rgba($secondary-text,0.3);
-    }
-    @include small {
-        @include font-size(14);
-    }
-    @include medium {
-        @include font-size(14);
-    }
-    @include large {
-        @include font-size(15);
-    }
-    @include extra {
-        @include font-size(15);
-    }
+
+.container--header {
+  background-color: $secondary;
+  margin-top: 40px;
+  position: relative;
+  height: 300px;
+  padding: 50px 60px 50px 60px;
 }
-.uml1 {
-    @include small {
-        padding-right: 0;
-    }
-    @include medium {
-        padding-right: 0;
-    } 
-    @include large {
-        padding-right: 100px;
-    }
-    @include extra {
-        padding-right: 200px;
-    }
-}
+
 .logo {
-    position: absolute;
-    left: 60px;
-    top: -30px;
+  position: absolute;
+  left: 60px;
+  top: -30px;
 }
+
 .logo__link {
-    @include font-size(48);
-     font-family: $base-font;
-     text-decoration: none;
-     text-transform: uppercase;
-     font-weight: 800;
-     color: $primary-text;
+  @extend %hover-active-state;
+  @include font-size(48);
+  font-family: $base-font;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
 }
-.navigation {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
-.nav-catalog__title {
-    text-decoration: none;
-    color: $primary-text;
-    &:hover {
-        color: $third-text;
+
+.input-header {
+  background-color: transparent;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  color: $primary-text;
+  &::placeholder {
+    color: $fourth-text;
+  }
+  &:hover {
+    &::placeholder {
+      color: $third-text;
     }
-    &:active{
-        color: rgba($secondary-text,0.3);
-        }
+  }
 }
-.nav-catalog {
+
+.fa-search:hover,
+.fa-plus:hover {
+  cursor: pointer;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: space-between;
+  @include small {
     width: 50%;
+  }
 }
-.nav-catalog__list {
-    list-style: none;
+
+.user-menu__icon {
+  @include small {
+    padding-right: 5px;
+  }
+  @include large {
+    padding-right: 10px;
+  }
 }
-.main-nav {
-    width: 30%;
-    @include medium {
-        width: 50%;
-    } 
+
+.user-menu__text {
+  display: none;
+  @include small {
+    display: inline;
+  }
 }
-.main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;   
-}
-.main-nav__link, .nav-catalog {
-    text-decoration: none;
-    text-transform: uppercase;
-    // @include font-size(18);
-    font-family: $base-font;
-    font-weight: 800;
-    letter-spacing: 1px;
-    color: $primary-text;
-    &:hover {
-        color: $third-text;
+
+.user-menu__link {
+  @extend %hover-active-state;
+  text-decoration: none;
+  font-family: $second-font;
+  @include font-size(14);
+  &:first-child {
+    padding-right: 0;
+    @include large {
+      padding-right: 100px;
     }
-    &:active{
-        color: rgba($secondary-text,0.3);
-        }
-        @include small {
-            font-size: 14px;
-            letter-spacing: 0;
-        }
-        @include medium {
-            font-size: 14px;
-            letter-spacing: 0;
-        }
-        @include large {
-            font-size: 16px;
-            letter-spacing: 0;
-        }
-        @include extra {
-            font-size: 18px;
-            letter-spacing: 1px;
-        }
+    @include extra {
+      padding-right: 200px;
+    }
+  }
+  @include large {
+    @include font-size(15);
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fa-plus {
+  color: $third-text;
+}
+
+.nav-catalog__title {
+  @extend %hover-active-state;
+}
+
+.nav-catalog {
+  width: 50%;
+}
+
+.main-nav {
+  width: 30%;
+  @include medium {
+    width: 50%;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.main-nav__link,
+.nav-catalog {
+  @extend %hover-active-state;
+  @include font-size(14);
+  text-transform: uppercase;
+  font-family: $base-font;
+  font-weight: 800;
+  letter-spacing: 0;
+  color: $primary-text;
+  @include large {
+    @include font-size(16);
+  }
+  @include extra {
+    @include font-size(18);
+    letter-spacing: 1px;
+  }
 }
 .mnl1 {
-    padding-right: 15px;
+  padding-right: 15px;
 }
+
 .mnl2 {
-    @include small {
-        padding-right: 0;
-    }
-    @include medium {
-        padding-right: 0;
-    }
-    @include large {
-        padding-right: 0;
-    }
-    @include extra {
-        padding-right: 110px;
-    }
+  padding-right: 0;
+  @include extra {
+    padding-right: 110px;
+  }
 }

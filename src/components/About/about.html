@@ -18,7 +18,7 @@
                 { subtitle: "ЖелДорЭкспеди" }
                 ]
                 %}
-                <ul class="about__list">
+                <ul class="about__list reset-list">
                     {% for item in items %}
                     <li class="about__item">
                         <a href="#" class="about__link reset-link"> {{ item.subtitle }} </a>
@@ -28,7 +28,7 @@
             </div>
             <div class="btn"><a href="#" class="btn-link reset-link">Подробнее о нас</a></div>
         </div>
-
+        
         <div class="about underline">
             <h2 class="about__title">Контакты</h2>
             <div>
@@ -36,42 +36,41 @@
                     Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
                     покупки. Всякое бывает.
                 </p>
-                <img src="img/map.jpg" alt="map" class="contacts__map">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MkdqMsAYEqDFCo9woIU6jhqRT7_Zzkkc" width="640" height="480" class="contacts__map"></iframe>
             </div>
-            <div class="btn"> <a href="#" onclick="openbox('box'); openinput('input'); return false"  class="btn-link reset-link">напишите нам</a></div>
-                <div  id="box"  class="btn-close"  onclick="closeinput('input'); closebox('box'); return false" ><i class="fas fa-times  btn-close__icon"></i></div>
-                <input  id="input"  class="input__input" type="text" placeholder="Представьтесь, пожалуйста">
+            <div class="btn" onclick="openbox('box'); openinput('input'); return false"> <a href="#"  class="btn-link reset-link">напишите нам</a></div>
+            <div  id="box"  class="btn-close"  onclick="closeinput('input'); closebox('box'); return false" ><i class="fas fa-times  btn-close__icon"></i></div>
+            <input  id="input"  class="input__input" type="text" placeholder="Представьтесь, пожалуйста">
         </div>
-        <script type="text/javascript">
-
-       function openbox(id){
-    display = document.getElementById(id).style.display;
-
-    if(display=='block'){
-       document.getElementById(id).style.display='none';
-    }else{
-       document.getElementById(id).style.display='block';
-    }
-}
-
-function openinput(id){
-    display = document.getElementById(id).style.display;
-
-    if(display=='block'){
-       document.getElementById(id).style.display='none';
-    }else{
-       document.getElementById(id).style.display='block';
-    }
-}
-function closeinput(id){
-    display = document.getElementById(id).style.display;
-    document.getElementById(id).style.display='none';
-}
-function closebox(id){
-    display = document.getElementById(id).style.display;
-    document.getElementById(id).style.display='none';
-}
-            </script>
+        <script>
+            function openbox(id){
+                display = document.getElementById(id).style.display;
+                
+                if(display=='flex'){
+                    document.getElementById(id).style.display='none';
+                }else{
+                    document.getElementById(id).style.display='flex';
+                }
+            }
             
-            
+            function openinput(id){
+                display = document.getElementById(id).style.display;
+                
+                if(display=='block'){
+                    document.getElementById(id).style.display='none';
+                }else{
+                    document.getElementById(id).style.display='block';
+                }
+            }
+            function closeinput(id){
+                display = document.getElementById(id).style.display;
+                document.getElementById(id).style.display='none';
+            }
+            function closebox(id){
+                display = document.getElementById(id).style.display;
+                document.getElementById(id).style.display='none';
+            }
+    </script>
 </section>
+            
+            

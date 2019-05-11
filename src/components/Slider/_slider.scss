@@ -1,148 +1,173 @@
 .container--slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    left: 0;
- 
-    @include extra {
-        top: -110px;
-    }
- }
- 
- .slider-title {
-    font-family: 'Gilroy-ExtraBold', sans-serif;
-    text-transform: none;
-    max-width: 500px;
-    text-align: left;
-    letter-spacing: 0px;
-    position: relative;
-    font-size: 25px;
-    z-index: 999;
- 
-    @include extra {
-        font-size: 47px;
-        padding-top: 60px;
- 
-    }
- 
-    &:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 15px;
-            width: 100px;
-            height: 7px;
-            background: #fff;
-            display: none;
- 
-            @include extra {
-                display: inline;
-            }
-    }
- 
-    &:after {
-        content: '01';
-        @include font-size(179);
-        font-family: 'Gilroy-ExtraBold', sans-serif;
-        position: absolute;
-        right: -35px;
-        top: -55px;
-        color: #fff;
-        z-index: -1;
-        display: none;
- 
-        @include extra {
-            display: inline;
-        }
- 
-    }
- }
- 
- .btn-radio-wrap {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 500px;
-    flex-wrap: wrap;
- 
- 
- }
- 
- .radio-btn {
-    list-style: none;
-    display: flex;
-    margin: 0;
- }
- 
- .radio-btn__img {
-    &:not(last-child) {
-        padding-right: 20px;
-    }
- }
- 
- .img-container {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 
-    @include extra {
-        width: 50%;
-    }
- }
- 
- .slider-img {
-    width: 70%;
- 
-    @include extra {
-        width: 384px;
-    }
- 
- }
- 
- .slider-description {
+  position: relative;
+  top: -110px;
+  height: 500px;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.img-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include extra {
     width: 50%;
- }
- 
- .slider-text {
-    line-height: 30px;
-    max-width: 500px;
-    font-family: $second-font;
-    @include font-size(15);
-    color: rgba(0, 0, 0, 0.8);
- }
- 
- .sp-title {
-    @include font-size(36);
-    font-weight: 400;
-    margin: 0;
-    font-family: 'Gilroy-Light', sans-serif;
-    line-height: 20px;
-    padding-bottom: 20px;
- }
- 
- .sp-text {
-    @include font-size(13);
-    color: rgba(0, 0, 0, 0.8);
-    margin: 0;
- }
- 
- .specification-wrap {
+  }
+}
+
+#dots ul {
+  text-align: center;
+  margin-top: -95px;
+}
+
+#dots ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background-color: $third;
+  border: 1px solid $primary;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary;
+  }
+}
+
+#dots ul li.active {
+  background-color: $primary;
+}
+.slider-title {
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  text-transform: none;
+  max-width: 500px;
+  margin-bottom: 15px;
+  text-align: left;
+  letter-spacing: 0px;
+  position: relative;
+  @include font-size(25);
+  z-index: 999;
+
+  @include extra {
+    @include font-size(47);
+    padding-top: 60px;
+  }
+
+  &:before {
+    top: 15px;
+    width: 100px;
+    background: $secondary-text;
+  }
+
+  &:after {
+    content: "01";
+    @include font-size(179);
+    font-family: "Gilroy-ExtraBold", sans-serif;
+    position: absolute;
+    right: -35px;
+    top: -55px;
+    color: $secondary-text;
+    z-index: -1;
+  }
+}
+
+.slider-img {
+  width: 70%;
+
+  @include extra {
+    width: 384px;
+  }
+}
+
+.slider-description {
+  width: 50%;
+}
+
+.slider-text {
+  @include font-size(15);
+  line-height: 30px;
+  max-width: 500px;
+  font-family: $second-font;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-radio-wrap {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.radio-btn {
+  display: flex;
+  margin: 0;
+}
+
+.radio-btn__img:not(last-child) {
+  padding-right: 20px;
+}
+
+.specif__title {
+  @include font-size(36);
+  font-weight: 400;
+  margin: 0;
+  font-family: "Gilroy-Light", sans-serif;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+.specif__text {
+  @include font-size(13);
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+.specif-wrap {
+  display: flex;
+  justify-content: flex-start;
+  display: none;
+
+  @include extra {
     display: flex;
-    justify-content: flex-start;
-    display: none;
- 
-    @include extra {
-        display: flex;
-    }
- }
- 
- .specification {
-    margin-top: 50px;
- 
-    &:not(:last-child) {
-        margin-right: 70px;
-    }
- }
+  }
+}
+
+.specif {
+  margin-top: 50px;
+  margin-right: 70px;
+}
+
+.slider-wrapper .nav {
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.nav.previous {
+  left: 0;
+  background-image: url(/img/left-arrow.png);
+}
+
+.nav.next {
+  right: 0;
+  background-image: url(/img/right-arrow.png);
+}
+
+.features {
+  width: 600px;
+  margin: 0 auto;
+}

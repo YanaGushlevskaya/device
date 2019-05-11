@@ -4,31 +4,26 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    h2{
-        @include font-size(25);
-        padding-bottom: 10px;
-        @include small{
-            @include font-size(25);
-            padding-bottom: 10px;
-        }
-        @include medium{
-            @include font-size(35);
-            padding-bottom: 20px;
-        }
-        @include extra{
-            @include font-size(47);
-            padding-bottom: 40px;
-        }
+}
+
+h2{
+    @include font-size(25);
+    padding-bottom: 10px;
+
+    @include medium{
+        @include font-size(35);
+        padding-bottom: 20px;
+    }
+    @include extra{
+        @include font-size(47);
+        padding-bottom: 40px;
     }
 }
 
 .services__section{
     position: relative;
     margin-bottom: 165px;
-
-}
-
-.services__section:after{
+    &:after {
     content: "";
     position: absolute;
     width:100%;
@@ -36,6 +31,7 @@
     background: #e5e5e5;
     bottom:-55px;    
     z-index: -5;
+    }
 }
 
 .services__wrapper{

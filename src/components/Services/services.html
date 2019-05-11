@@ -3,43 +3,28 @@
 
     <div class="container services__container">
         <div class="services__wrapper">
-            <input name="tabs" type="radio" id="tab-1" class="sevices__input" checked/>
-            <label for="tab-1" class="services__radio btn">Доставка</label>
-            <div class="services__description">
-                <div class="services__slider">
-                    <h2>Доставка</h2>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
-                        неплохо заработаем, поднимая его на ваш этаж.
-                    </p>
-                </div>
-                <img src="img/delivery.png" alt="delivert" class="services__img">
-            </div>
-            <input name="tabs" type="radio" id="tab-2" class="sevices__input" />
-            <label for="tab-2" class="services__radio btn">Гарантия</label>
-            <div class="services__description">
-                <div class="services__slider">
-                    <h2>Гарантия</h2>
-                    <p>На товары в нашем магазине предоставляется гарантия, подтверждающая обязательства по отсутствию
-                        в товаре заводских дефектов. Гарантия предоставляется на срок от 2-х недель до 99 месяцев в
-                        зависимости от сервисной политики производителя. Срок гарантии указан в описании каждого товара
-                        на нашем
-                        сайте.
-                    </p>
-                </div>
-                <img src="img/warranty.png" alt="guarantee" class="services__img">
-            </div>
-            <input name="tabs" type="radio" id="tab-3" class="sevices__input" />
-            <label for="tab-3" class="services__radio btn">Кредит </label>
-            <div class="services__description">
-                <div class="services__slider">
-                    <h2>Кредит</h2>
-                    <p>Покупка в кредит — это просто! Ознакомьтесь с условиями, которые предлагают наши
-                        банки-партнеры.
-                    </p>
-                </div>
-                <img src="img/credit.png" alt="credit" class="services__img">
-            </div>
-        </div>
-    </div>
+            {% set items = [
+                { id:'tab-1', h2:'Доставка', p:'Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                неплохо заработаем, поднимая его на ваш этаж.', img:'img/delivery.png' },
+                { id:'tab-2', h2:'Гарантия', p:'На товары в нашем магазине предоставляется гарантия, подтверждающая обязательства по отсутствию
+                в товаре заводских дефектов. Гарантия предоставляется на срок от 2-х недель до 99 месяцев в
+                зависимости от сервисной политики производителя. Срок гарантии указан в описании каждого товара
+                на нашем
+                сайте.', img:'img/warranty.png' },
+                { id:'tab-3', h2:'Кредит', p:'Покупка в кредит — это просто! Ознакомьтесь с условиями, которые предлагают наши
+                банки-партнеры.', img:'img/credit.png' }
+                ]
+            %}
 
+            {% for item in items %}
+            <input name="tabs" type="radio" id="{{ item.id }}" class="sevices__input" checked/>
+            <label for="{{ item.id }}" class="services__radio btn">{{ item.h2 }}</label>
+            <div class="services__description">
+                <div class="services__slider">
+                        <h2>{{ item.h2 }}</h2>
+                        <p>{{ item.p }}</p>
+                </div>
+                <img src="{{ item.img }}" alt="delivert" class="services__img">
+            </div>
+            {% endfor %}
 </section>

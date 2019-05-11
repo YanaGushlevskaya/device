@@ -7,7 +7,8 @@ $third: #EEE;
 
 $primary-text: #000;
 $secondary-text: #fff;
-$third-text: rgba(0, 0, 0, 0.3);
+$third-text: rgba($primary-text, 0.3);
+$fourth-text: rgba($primary-text, 0.6);
 
 $success: green;
 $warning: yellow;
