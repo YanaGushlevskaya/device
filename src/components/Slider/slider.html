@@ -1,4 +1,4 @@
-<section class="slider-section">
+<section class="section slider-section">
   <div class="container container--slider">
     <div class="slider-wrapper slider-wrapper-1">
       <div class="img-container">
@@ -14,8 +14,8 @@
           Самая длинная палка для селфи доступна в нашем магазине.<br />
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
         </p>
-        <div class="btn-radio-wrap">
-          <div class="btn">Подробнее</div>
+        <div class="btn-wrapper">
+          <div class="btn btn--slider">Подробнее</div>
         </div>
 
         <div class="specif-wrap">
@@ -45,8 +45,8 @@
           Самая длинная палка для селфи доступна в нашем магазине.<br />
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
         </p>
-        <div class="btn-radio-wrap">
-          <div class="btn">Подробнее</div>
+        <div class="btn-wrapper">
+          <div class="btn btn--slider">Подробнее</div>
         </div>
 
         <div class="specif-wrap">
@@ -78,7 +78,7 @@
       let nextImage = 2;
 
       // Find width of container div
-      let sliderWidth = $(".container--slider").width() + 2;
+      let sliderWidth = $(".container--slider").width();
 
       // Give images same width as slider
       let sizeImages = function() {

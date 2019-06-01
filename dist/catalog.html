@@ -27,7 +27,7 @@
     <div class="topbar">
       <div class="search">
         <i class="fas fa-search"></i>
-        <input class="input-header" type="text" placeholder="Поиск по сайту" />
+        <input class="search__input" type="text" placeholder="Поиск по сайту" />
       </div>
       <div class="user-menu">
         <a class="user-menu__link reset-link" href="#"
@@ -45,18 +45,16 @@
       </div>
     </div>
 
-    <div class="navigation">
+    <div class="nav-wrapper">
       <nav class="nav-catalog">
-        <li class="nav-catalog__list reset-list">
           <a href="catalog.html" class="nav-catalog__title reset-link">Каталог товаров</a>
           <i class="fas fa-plus"></i>
-        </li>
       </nav>
 
       <nav class="main-nav">
         <ul class="main-nav__list reset-list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link mnl1 reset-link">
+            <a href="#" class="main-nav__link reset-link">
               Доставка
             </a>
           </li>
@@ -346,78 +344,101 @@
   
 
   <footer class="footer">
-    <div class="container">
-        <div class="footer-container">
-            <div class="footer__block footer__left">
-                    <div>
-                            <a href="index.html" class="footer-logo">
-                              Device
-                            </a>
-                          </div>
-                    <!-- <a href="index.html" class="footer-logo">
-                            <h1 class="footer-logo">
-                    Device
-                </h1>
-                </a> -->
-               
-                <p class="footer__description">г. Москва, ул. Строителей, 15</p>
-                <div class="footer__left-line underline"></div>
-            </div>
-            <div class="footer__block footer__center">
-                
-                <ul class="footer__center-list">
-                    
-                    <li class="footer__center-item"> <a href="#" class="footer__center-item-link"> Доставка
-                        </a></li>
-                    
-                    <li class="footer__center-item"> <a href="#" class="footer__center-item-link"> Гарантии
-                        </a></li>
-                    
-                    <li class="footer__center-item"> <a href="#" class="footer__center-item-link"> Контакты
-                        </a></li>
-                    
-                </ul>
-                
-                <ul class="footer__center-icon-list">
-                    
-                    <li class="footer__center-icon-item"><a href="#" class="footer__center-icon-link"> <i class="fab fa-twitter-square"></i></a></li>
-                    
-                    <li class="footer__center-icon-item"><a href="#" class="footer__center-icon-link"> <i class="fab fa-facebook-square"></i></a></li>
-                    
-                    <li class="footer__center-icon-item"><a href="#" class="footer__center-icon-link"> <i class="fab fa-instagram"></i></a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer__block footer__right">
-                
+  <div class="container footer--container">
 
-                <ul class="footer__right-list">
-                    
-                    <li class="footer__right-item">
-                        <a href="" class="footer__right-link">
-
-                            <p class="footer__right-nav"><i class="fas fa-user footer__right-icon"></i>Войти</p>
-                        </a></li>
-                    
-                    <li class="footer__right-item">
-                        <a href="" class="footer__right-link">
-
-                            <p class="footer__right-nav"><i class="fas fa-signal footer__right-icon"></i>Сравнить</p>
-                        </a></li>
-                    
-                    <li class="footer__right-item">
-                        <a href="" class="footer__right-link">
-
-                            <p class="footer__right-nav"><i class="fas fa-shopping-bag footer__right-icon"></i>Корзина</p>
-                        </a></li>
-                    
-                </ul>
-                <p class="footer__description-right"><a class="footer__description-right" href="tel:+74954959595"> Тел.: +7 (495) 495-95-95</a></p>
-                <a href="#" class="footer__logo-html">
-                    <img src="img/logo-html.png" alt="logo-html" class="footer__logo-html"></a>
-            </div>
-        </div>
+    <div class="footer__block footer__block--left underline">
+      <div class="footer__logo">
+        <a href="index.html" class="footer__link">
+          Device
+        </a>
+      </div>
+      <p class="footer__description">г. Москва, ул. Строителей, 15</p>
     </div>
+
+
+    <div class="footer__block footer__block--center">
+      
+      <ul class="center__list reset-list">
+        
+        <li class="center__item">
+          <a href="#" class="center__link reset-link"> Доставка </a>
+        </li>
+        
+        <li class="center__item">
+          <a href="#" class="center__link reset-link"> Гарантии </a>
+        </li>
+        
+        <li class="center__item">
+          <a href="#" class="center__link reset-link"> Контакты </a>
+        </li>
+        
+      </ul>
+
+      
+      <ul class="center__icon-list reset-list">
+        
+        <li class="center__icon-item">
+          <a href="#" class="center__icon-link reset-link">
+            <i class="fab fa-twitter-square"></i
+          ></a>
+        </li>
+        
+        <li class="center__icon-item">
+          <a href="#" class="center__icon-link reset-link">
+            <i class="fab
+      fa-facebook-square"></i
+          ></a>
+        </li>
+        
+        <li class="center__icon-item">
+          <a href="#" class="center__icon-link reset-link">
+            <i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        
+      </ul>
+    </div>
+
+
+    <div class="footer__block footer__block--right">
+      
+
+      <ul class="right__list">
+        
+        <li class="right__item">
+          <a href="" class="right__link reset-link">
+            <i class="fas fa-user right__icon"></i>
+            <span class="right__nav">Войти</span>
+          </a>
+        </li>
+        
+        <li class="right__item">
+          <a href="" class="right__link reset-link">
+            <i class="fas
+      fa-signal right__icon"></i>
+            <span class="right__nav">Сравнить</span>
+          </a>
+        </li>
+        
+        <li class="right__item">
+          <a href="" class="right__link reset-link">
+            <i class="fas fa-shopping-bag right__icon"></i>
+            <span class="right__nav">Корзина</span>
+          </a>
+        </li>
+        
+      </ul>
+      <p class="right__description">
+        <a class="right__link reset-link" href="tel:+74954959595">
+          Тел.: +7 (495) 495-95-95</a
+        >
+      </p>
+      <a href="#" class="footer__logo-html">
+        <img src="img/logo-html.png" alt="logo-html" class="footer__logo-html"
+      /></a>
+    </div>
+  </div>
 </footer>
+
 </body>
 </html>

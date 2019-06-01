@@ -1,8 +1,8 @@
-<section class="popular">
+<section class="section popular__section">
     <h2 hidden>popular</h2>
 
     <div class="container popular__container">
-        <li class="popular__list reset-list">
+        <ul class="popular__list reset-list">
 
             {% set items = [
             { img:'img/popular/item1.png', alt:'виртуальная реальность', h2:'Виртуальная реальность' },
@@ -15,7 +15,7 @@
             %}
 
             {% for item in items %}
-            <ul class="popular__item">
+            <li class="popular__item">
                 <a href="#" class="popular__link reset-link">
                     <figure class="popular__figure">
                         <div class="popular__img-wrapper">
@@ -26,9 +26,9 @@
                         </figcaption>
                     </figure>
                 </a>
-            </ul>
+            </li>
             {% endfor %}
-        </li>
+        </ul>
     </div>
 
 </section>

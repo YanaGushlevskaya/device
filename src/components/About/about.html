@@ -1,4 +1,4 @@
-<section class="about__section">
+<section class="section about__section">
     <div class="container about__container">
 
         <div class="about underline">
@@ -26,7 +26,7 @@
                     {% endfor %}
                 </ul>
             </div>
-            <div class="btn"><a href="#" class="btn-link reset-link">Подробнее о нас</a></div>
+            <div class="btn btn--about"><a href="#" class="btn-link reset-link">Подробнее о нас</a></div>
         </div>
         
         <div class="about underline">
@@ -38,9 +38,9 @@
                 </p>
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MkdqMsAYEqDFCo9woIU6jhqRT7_Zzkkc" width="640" height="480" class="contacts__map"></iframe>
             </div>
-            <div class="btn" onclick="openbox('box'); openinput('input'); return false"> <a href="#"  class="btn-link reset-link">напишите нам</a></div>
+            <div class="btn btn--about" onclick="openbox('box'); openinput('input'); return false"> <a href="#"  class="btn-link reset-link">напишите нам</a></div>
             <div  id="box"  class="btn-close"  onclick="closeinput('input'); closebox('box'); return false" ><i class="fas fa-times  btn-close__icon"></i></div>
-            <input  id="input"  class="input__input" type="text" placeholder="Представьтесь, пожалуйста">
+            <input  id="input"  class="about__input" type="text" placeholder="Представьтесь, пожалуйста">
         </div>
         <script>
             function openbox(id){

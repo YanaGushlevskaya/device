@@ -1,8 +1,9 @@
 .about {
   &:first-child {
-    margin-right: 90px;
-    @include extra {
+    padding-bottom: 55px;
+    @include medium {
       margin-right: 60px;
+      padding-bottom: 0px;
     }
   }
   &:before {
@@ -14,7 +15,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: space-between;
-  margin-bottom: 90px;
   div {
     flex-grow: 1;
   }
@@ -26,17 +26,23 @@
   color: #464646;
   font-family: $second-font;
   font-weight: 300;
-  padding-bottom: 45px;
+  padding-bottom: 20px;
   margin: 0;
+  @include medium {
+    padding-bottom: 45px;
+  }
 }
 
 .about__list {
   padding-left: 0;
   font-family: $second-font;
   @include font-size(18);
-  margin-top: 22px;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
   font-weight: 800;
+  @include medium {
+    margin-top: 22px;
+    margin-bottom: 75px;
+  }
 }
 
 .about__item {
@@ -66,7 +72,10 @@
 .contacts__map {
   width: 100%;
   height: 220px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  @include medium {
+    margin-bottom: 80px;
+  }
 }
 
 .btn-link {
@@ -76,15 +85,26 @@
   }
 }
 
-.about__title {
-  padding-bottom: 55px;
+.btn--about {
+  margin: 0 auto;
+  @include medium {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
-.input__input {
+.about__title {
+  padding-bottom: 20px;
+  @include medium {
+    padding-bottom: 55px;
+  }
+}
+
+.about__input {
   display: none;
   position: absolute;
-  left: 350px;
-  bottom: 0;
+  left: 0px;
+  bottom: -60px;
   width: 260px;
   height: 50px;
   background: rgba($third, 0.5);
@@ -107,13 +127,20 @@
   &:invalid {
     background: rgba(#eeb2b3, 0.5);
   }
+  @include extra-large {
+    left: 350px;
+    bottom: 0;
+    height: 50px;
+    background: rgba($third, 0.5);
+    padding: 0 20px;
+  }
 }
 
 .btn-close {
   display: none;
   position: absolute;
-  left: 210px;
-  bottom: 110px;
+  left: 300px;
+  bottom: -58px;
   border-radius: 50%;
   background: $primary;
   width: 50px;
@@ -127,12 +154,9 @@
   &:active {
     opacity: 0.3;
   }
-  @include extra {
-    left: 510px;
-    bottom: 0;
-  }
   @include extra-large {
     left: 620px;
+    bottom: 0;
   }
 }
 .btn-close__icon {
