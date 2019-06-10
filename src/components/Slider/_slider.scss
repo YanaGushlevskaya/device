@@ -65,6 +65,7 @@
 #dots ul li.active {
   background-color: $primary;
 }
+
 .slider-title {
   font-family: "Gilroy-ExtraBold", sans-serif;
   text-transform: none;
@@ -185,7 +186,7 @@
   margin-right: 70px;
 }
 
-.slider-wrapper .nav {
+.container--slider .nav {
   position: absolute;
   width: 100px;
   height: 300px;
@@ -194,14 +195,24 @@
   cursor: pointer;
 }
 
-.nav.previous {
-  left: 0;
-  background-image: url(/img/left-arrow.png);
+.previous {
+  display:none;
+  z-index: 5;
+  @include large {
+    display: block;
+    left: 0;
+    background-image: url("/img/left-arrow.png");
+  }
 }
 
-.nav.next {
-  right: 0;
-  background-image: url(/img/right-arrow.png);
+.next {
+  display:none;
+  z-index: 5;
+  @include large {
+    display: block;
+    right: 0;
+    background-image: url("/img/right-arrow.png"); 
+  }
 }
 
 .features {

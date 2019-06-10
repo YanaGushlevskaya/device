@@ -10,10 +10,9 @@
 
   </title>
 
-  <script src="index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="modules/nouislider.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
@@ -47,8 +46,10 @@
 
     <div class="nav-wrapper">
       <nav class="nav-catalog">
-          <a href="catalog.html" class="nav-catalog__title reset-link">Каталог товаров</a>
-          <i class="fas fa-plus"></i>
+        <a href="catalog.html" class="nav-catalog__title reset-link"
+          >Каталог товаров</a
+        >
+        <i class="fas fa-plus"></i>
       </nav>
 
       <nav class="main-nav">
@@ -74,7 +75,7 @@
   </div>
 </header>
 
-
+  
   <div class="content">
     
   <section class="section slider-section">
@@ -296,96 +297,118 @@
 </section>
 
   <section class="section popular__section">
-    <h2 hidden>popular</h2>
+  <h2 hidden>popular</h2>
 
-    <div class="container popular__container">
-        <ul class="popular__list reset-list">
-
-            
-
-            
-            <li class="popular__item">
-                <a href="#" class="popular__link reset-link">
-                    <figure class="popular__figure">
-                        <div class="popular__img-wrapper">
-                            <img src="img/popular/item1.png" alt="виртуальная реальность" class="popular__img">
-                        </div>
-                        <figcaption>
-                            <h3 class="popular__img-title">Виртуальная реальность</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            
-            <li class="popular__item">
-                <a href="#" class="popular__link reset-link">
-                    <figure class="popular__figure">
-                        <div class="popular__img-wrapper">
-                            <img src="img/popular/item2.png" alt="моноподы для селфи" class="popular__img">
-                        </div>
-                        <figcaption>
-                            <h3 class="popular__img-title">Моноподы для селфи</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            
-            <li class="popular__item">
-                <a href="#" class="popular__link reset-link">
-                    <figure class="popular__figure">
-                        <div class="popular__img-wrapper">
-                            <img src="img/popular/item3.png" alt="экшн-камеры" class="popular__img">
-                        </div>
-                        <figcaption>
-                            <h3 class="popular__img-title">Экшн-камеры</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            
-            <li class="popular__item">
-                <a href="#" class="popular__link reset-link">
-                    <figure class="popular__figure">
-                        <div class="popular__img-wrapper">
-                            <img src="img/popular/item4.png" alt="фитнес-браслеты" class="popular__img">
-                        </div>
-                        <figcaption>
-                            <h3 class="popular__img-title">Фитнес-браслеты</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            
-            <li class="popular__item">
-                <a href="#" class="popular__link reset-link">
-                    <figure class="popular__figure">
-                        <div class="popular__img-wrapper">
-                            <img src="img/popular/item5.png" alt="умные часы" class="popular__img">
-                        </div>
-                        <figcaption>
-                            <h3 class="popular__img-title">Умные часы</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            
-            <li class="popular__item">
-                <a href="#" class="popular__link reset-link">
-                    <figure class="popular__figure">
-                        <div class="popular__img-wrapper">
-                            <img src="img/popular/item6.png" alt="квадрокоптеры" class="popular__img">
-                        </div>
-                        <figcaption>
-                            <h3 class="popular__img-title">Квадрокоптеры</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            
-        </ul>
-    </div>
-
+  <div class="container popular__container">
+    <ul class="popular__list reset-list">
+       
+      <li class="popular__item">
+        <a href="#" class="popular__link reset-link">
+          <figure class="popular__figure">
+            <div class="popular__img-wrapper">
+              <img
+                src="img/popular/item1.png"
+                alt="виртуальная
+      реальность"
+                class="popular__img"
+              />
+            </div>
+            <figcaption>
+              <h3 class="popular__img-title">Виртуальная реальность</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      
+      <li class="popular__item">
+        <a href="#" class="popular__link reset-link">
+          <figure class="popular__figure">
+            <div class="popular__img-wrapper">
+              <img
+                src="img/popular/item2.png"
+                alt="моноподы для селфи"
+                class="popular__img"
+              />
+            </div>
+            <figcaption>
+              <h3 class="popular__img-title">Моноподы для селфи</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      
+      <li class="popular__item">
+        <a href="#" class="popular__link reset-link">
+          <figure class="popular__figure">
+            <div class="popular__img-wrapper">
+              <img
+                src="img/popular/item3.png"
+                alt="экшн-камеры"
+                class="popular__img"
+              />
+            </div>
+            <figcaption>
+              <h3 class="popular__img-title">Экшн-камеры</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      
+      <li class="popular__item">
+        <a href="#" class="popular__link reset-link">
+          <figure class="popular__figure">
+            <div class="popular__img-wrapper">
+              <img
+                src="img/popular/item4.png"
+                alt="фитнес-браслеты"
+                class="popular__img"
+              />
+            </div>
+            <figcaption>
+              <h3 class="popular__img-title">Фитнес-браслеты</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      
+      <li class="popular__item">
+        <a href="#" class="popular__link reset-link">
+          <figure class="popular__figure">
+            <div class="popular__img-wrapper">
+              <img
+                src="img/popular/item5.png"
+                alt="умные часы"
+                class="popular__img"
+              />
+            </div>
+            <figcaption>
+              <h3 class="popular__img-title">Умные часы</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      
+      <li class="popular__item">
+        <a href="#" class="popular__link reset-link">
+          <figure class="popular__figure">
+            <div class="popular__img-wrapper">
+              <img
+                src="img/popular/item6.png"
+                alt="квадрокоптеры"
+                class="popular__img"
+              />
+            </div>
+            <figcaption>
+              <h3 class="popular__img-title">Квадрокоптеры</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
 </section>
+
   <section class="services__section">
     <h2 hidden>services</h2>
 
@@ -431,6 +454,7 @@
             </div>
             
 </section>
+
   <section class="section logotypes__section">
     <h2 hidden>logotypes</h2>
 
@@ -449,6 +473,7 @@
         </div>
     </div>
 </section>
+
   <section class="section about__section">
     <div class="container about__container">
 
@@ -526,15 +551,12 @@
             }
     </script>
 </section>
-            
-            
+               
 
   </div>
   
-
   <footer class="footer">
   <div class="container footer--container">
-
     <div class="footer__block footer__block--left underline">
       <div class="footer__logo">
         <a href="index.html" class="footer__link">
@@ -543,7 +565,6 @@
       </div>
       <p class="footer__description">г. Москва, ул. Строителей, 15</p>
     </div>
-
 
     <div class="footer__block footer__block--center">
       
@@ -588,7 +609,6 @@
       </ul>
     </div>
 
-
     <div class="footer__block footer__block--right">
       
 
@@ -629,5 +649,8 @@
   </div>
 </footer>
 
+  <script src="index.js"></script>
+  <script src="modules/nouislider.min.js"></script>
+  <link rel="stylesheet" href="css/main.min.css">
 </body>
 </html>

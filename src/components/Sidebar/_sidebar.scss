@@ -1,117 +1,190 @@
+.container--sidebar {
+  padding: 0;
+}
+
 .sidebar-title {
-    text-transform: none;
-    @include font-size(47);
+  text-transform: none;
+  @include font-size(25);
+  margin: 35px 0 30px 30px;
+  @include medium {
     margin: 35px 60px 30px 60px;
-    
+  }
+  @include large {
+    @include font-size(47);
+  }
 }
 
 .breadcrumbs {
-    margin-left: 60px;
-    margin-bottom: 40px;
-    ul {
-        padding: 0;
-        list-style: none;
-        display: flex;
+  margin: 0 0 30px 30px;
+  ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    &:not(:last-child):after {
+      content: url(/img/nav-arrow.png);
+      left: 0;
+      top: 0;
+      margin: 0 15px;
     }
-    li {
-        &:not(:last-child):after {
-            content: url(/img/nav-arrow.png);
-            left: 0;
-            top: 0;
-            margin: 0 15px;
-        }
-    }
-    a {
-        text-decoration: none;
-        color: $third-text;
-    }
+  }
+  a {
+    text-decoration: none;
+    color: $third-text;
+  }
+  @include medium {
+    margin: 0 0 40px 60px;
+  }
 }
 
 .panel {
-    display: flex;
-    align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.panel__container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  @include medium {
+    padding: 0 0 0 60px;
+  }
 }
 
 .filter {
-    display: none;
-    @include medium{
-        display: block;
-    }
-    width: 28%;
+  display: none;
+  width: 28%;
+  height: 65px;
+  background-color: #dbdbdb;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1000%;
     height: 65px;
-    background-color: #DBDBDB;
-    position: relative;
+    right: 0;
+    top: 0;
+    background: #dbdbdb;
+    z-index: -1;
+  }
+
+  @include medium {
     display: flex;
     align-items: center;
-
-    &:before {
-        content: "";
-        position: absolute;
-        width: 1000%;
-        height: 65px;
-        right: 0;
-        top: 0;
-        background: #DBDBDB;
-        z-index: -1;
-        overflow: hidden;
-    }
+  }
 }
 
-
-.filter__title, .sortpanel__title {
-    font-family: $base-font;
-    color: $primary-text;
-    text-transform: uppercase;
+.filter__title,
+.sortpanel__title {
+  font-family: $base-font;
+  color: $primary-text;
+  text-transform: uppercase;
+  @include font-size(15);
+  font-weight: 800;
+  letter-spacing: 3px;
+  @include medium {
     @include font-size(16);
-    font-weight: 800;
-    letter-spacing: 3px;
+  }
+  @include large {
+    margin: 0;
+  }
+}
+
+.filter__title {
+  padding: 0;
+  margin: 0;
+}
+
+.sortpanel__title {
+  padding-left: 30px;
+  @include medium {
+    padding-left: 25px;
+  }
+  @include large {
     padding-left: 60px;
+  }
 }
 
 .sortpanel {
-    width: 72%;
-    height: 65px;
+  width: 100%;
+  display: flex;
+  background-color: #ebebeb;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 85px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1000%;
+    left: 0;
+    top: 0;
+    background: #ebebeb;
+    z-index: -5;
+    overflow: hidden;
+    @include medium {
+      height: 65px;
+    }
+  }
+
+  ul {
     display: flex;
-    background-color: #EBEBEB;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
-        padding-right: 160px;
+    padding-left: 25px;
+    margin: 0 0 15px 0;
+    @include small {
+      margin: 15px 0;
     }
-
-    a {
-        text-decoration: none;
-        color: $third-text;
-        padding: 13px;
+    @include medium {
+      padding-left: 10px;
     }
-
-    &:after {
-        content: "";
-        position: absolute;
-        width: 144.5%;
-        height: 65px;
-        left: 0;
-        top: 0;
-        background: #EBEBEB;
-        z-index: -1;
+    @include large {
+      padding-right: 50px;
+      margin: 0;
     }
+    @include extra {
+      padding-right: 200px;
+      margin: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $third-text;
+    padding: 10px;
+  }
+  @include small {
+    height: 65px;
+  }
+  @include medium {
+    width: 72%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .active-link {
-    color: $primary-text !important;
+  color: $primary-text !important;
 }
 
 .sortpanel__btns {
-    display: flex;
-    align-items: flex-end;
-    a {
-        text-decoration: none;
-        padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  a {
+    text-decoration: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+    &:not(:last-child) {
+      padding: 0 8px 0 0;
     }
+    @include small {
+      margin: 0;
+    }
+  }
 }
