@@ -1,22 +1,19 @@
-# Simple Boilerplate-starter
+[DEMO](https://yanagushlevskaya.github.io/device/dist/)
 
+## Simple Boilerplate-starter
 ## Installation
-
 ### Requirements
-
 - Node.js
 - Gulp
 
 `$ npm i`
 
 ## Usage
-
 ```
 npm run serve
 ```
 
 ## Compress images
-
 ```
 npm run img
 ```
