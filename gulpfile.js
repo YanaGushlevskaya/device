@@ -14,8 +14,8 @@ const uglify = require('gulp-uglify');
 
 gulp.task('css', () => {
   return gulp
-    .src('src/main.scss') //какой файл берем
-    .pipe(plumber()) //вызов плагина
+    .src('src/main.scss')
+    .pipe(plumber())
     .pipe(maps.init())
     .pipe(
       sass({
@@ -35,7 +35,7 @@ gulp.task('css', () => {
     )
     .pipe(maps.write())
     .pipe(plumber.stop())
-    .pipe(gulp.dest('dist/css')) // куда сохраняем
+    .pipe(gulp.dest('dist/css'))
     .pipe(sync.stream());
 });
 
@@ -75,7 +75,7 @@ gulp.task('js', () => {
   .pipe(plumber())
   .pipe(maps.init())
   .pipe(rigger())
-  .pipe(uglify())
+ /*  .pipe(uglify()) */
   .pipe(maps.write())
   .pipe(plumber.stop())
   .pipe(gulp.dest('dist/'))
@@ -95,7 +95,7 @@ gulp.task('modules', () => {
 
 gulp.task('copy-modules', ['modules']);
 
-gulp.task('reload', () => { //для компиляции при сохранении файла
+gulp.task('reload', () => {
   sync({
     server: {
       baseDir: 'dist/',

@@ -2,12 +2,10 @@
   <div class="container catalog__container">
     {% include '../Catalog/asidebar/asidebar.html' %}
     <div class="catalog__main-content">
-      {% set items = [ { img: "img/item-1.jpg.png", imgtitle: "Любительская
-      селфи-палка", imgsubtitle: "500 руб." }, { img: "img/item-2.jpg.png",
-      imgtitle: "Профессиональная селфи-палка ", imgsubtitle: "1 500 руб." }, {
-      img: "img/item-3.jpg.png", imgtitle: "Непотопляемая селфи-палка",
-      imgsubtitle: "2 500 руб." }, { img: "img/item-4.jpg.png", imgtitle:
-      "Селфи-палка «Следуй за мной»", imgsubtitle: "4 900 руб." } ] %}
+      {% set items = [ { img: "img/item-1.jpg.png", imgtitle: "Любительская селфи-палка", imgsubtitle: "500 руб." }, {
+      img: "img/item-2.jpg.png", imgtitle: "Профессиональная селфи-палка ", imgsubtitle: "1 500 руб." }, { img:
+      "img/item-3.jpg.png", imgtitle: "Непотопляемая селфи-палка", imgsubtitle: "2 500 руб." }, { img:
+      "img/item-4.jpg.png", imgtitle: "Селфи-палка «Следуй за мной»", imgsubtitle: "4 900 руб." } ] %}
 
       <ul class="catalog__list reset-list">
         {% for item in items %}
@@ -18,9 +16,7 @@
                 <img src="{{ item.img }}" alt="#" class="catalog__img" />
                 <div class="catalog-hover">
                   <div class="btn catalog__btn">
-                    <a href="catalog.html" class="catalog__btn-link reset-link"
-                      >В корзину</a
-                    >
+                    <a href="catalog.html" class="catalog__btn-link reset-link">В корзину</a>
                   </div>
                   <p class="catalog__hover-text">Добавить к сравнению</p>
                 </div>
@@ -29,9 +25,7 @@
                 <span class="catalog__img-title">
                   {{ item.imgtitle }}
                 </span>
-                <span class="catalog__img-sub-title">{{
-                  item.imgsubtitle
-                }}</span>
+                <span class="catalog__img-sub-title">{{ item.imgsubtitle }}</span>
               </figcaption>
             </a>
           </figure>
@@ -40,9 +34,7 @@
       </ul>
 
       <div class="catalog__navigation">
-        <a href="#" class="catalog__navigation-description next-last reset-link"
-          >Назад</a
-        >
+        <a href="#" class="catalog__navigation-description next-last reset-link">Назад</a>
         <ul class="catalog__navigation-list reset-list">
           <li class="catalog__navigation-item">
             <a href="#" class="reset-link catalog__navigation-description  reset-link">1</a>
@@ -54,9 +46,7 @@
             <a href="#" class="reset-link catalog__navigation-description  reset-link">3</a>
           </li>
         </ul>
-        <a href="#" class="catalog__navigation-description next-last reset-link"
-          >Вперед</a
-        >
+        <a href="#" class="catalog__navigation-description next-last reset-link">Вперед</a>
       </div>
     </div>
   </div>

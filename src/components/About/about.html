@@ -42,34 +42,5 @@
             <div  id="box"  class="btn-close"  onclick="closeinput('input'); closebox('box'); return false" ><i class="fas fa-times  btn-close__icon"></i></div>
             <input  id="input"  class="about__input" type="text" placeholder="Представьтесь, пожалуйста">
         </div>
-        <script>
-            function openbox(id){
-                display = document.getElementById(id).style.display;
-                
-                if(display=='flex'){
-                    document.getElementById(id).style.display='none';
-                }else{
-                    document.getElementById(id).style.display='flex';
-                }
-            }
-            
-            function openinput(id){
-                display = document.getElementById(id).style.display;
-                
-                if(display=='block'){
-                    document.getElementById(id).style.display='none';
-                }else{
-                    document.getElementById(id).style.display='block';
-                }
-            }
-            function closeinput(id){
-                display = document.getElementById(id).style.display;
-                document.getElementById(id).style.display='none';
-            }
-            function closebox(id){
-                display = document.getElementById(id).style.display;
-                document.getElementById(id).style.display='none';
-            }
-    </script>
 </section>
                
